@@ -18,7 +18,14 @@
 
     &-logo {
         width: 250px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
 
+        .icon-logo {
+            fill:#fff;
+        }
     }
 
     &-body {
@@ -50,7 +57,7 @@
         &::after {
             content: '';
             position: fixed;
-            z-index: 1;
+            z-index: -1;
             top: 0;
             right: 0;
             background-color: #fff;
@@ -600,6 +607,10 @@
         background-color: #293439;
         box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.3);
         padding: 12px 0;
+
+        .icon-logo {
+            fill:#535f65;
+        }
 
         &-grid {
             display: flex;
