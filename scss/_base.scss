@@ -5,3 +5,84 @@
   text-align: center;
   margin-bottom: 18px;
 }
+
+body, html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.c-input {
+
+}
+
+.c-social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    &-card {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 150px;
+        margin-right: 9px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.c-subscription {
+
+    a {
+        color: #f06314;
+        text-decoration: none;
+    }
+
+    &-form {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-bottom: 8px;
+    }
+
+    &-input {
+        width: 100%;
+        display: block;
+        padding: 14px 17px;
+        background-color: #fff;
+        border-radius: 4px;
+        color: #293439;
+        font-size: 13px;
+        margin-right: 12px;
+        border:none;
+        outline:none;
+    }
+
+    &-btn {
+        background-color: #f06314;
+        display: block;
+        padding: 14px 17px;
+        color: #ffffff;
+        font-size: 13px;
+        text-align: center;
+        border-radius: 4px;
+        border:none;
+        outline:none;
+        cursor: pointer;
+
+    }
+
+    &__text {
+        color: #a7abaf;
+        font-size: 13px;
+        margin-bottom: 8px;
+
+    }
+
+    &-grid {
+
+    }
+
+}

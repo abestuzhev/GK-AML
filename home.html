@@ -3,12 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>gk-aml</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
-    <div class="layout"></div>
+<header class="header-layout">
+    <div class="layout">
+        <div class="header">
+            <div class="header-logo"></div>
+            <div class="header-body">
+                <!--<div class="header-operation-layout">-->
+                    <div class="header-operation">
+                        <div class="header-operation-left">
+                            <div class="header-catalog">
+                                <a href="#" class="header-catalog__link">Каталог товаров</a>
+                                <div class="catalog-menu">
+                                    <ul class="catalog-menu-category">
+                                        <li class="catalog-menu-category__item active">
+                                            <a href="#" class="catalog-menu-category__title">Cisco</a>
+                                        </li>
+                                        <li class="catalog-menu-category__item">
+                                            <a href="#" class="catalog-menu-category__title">Hpe</a>
+                                        </li>
+                                        <li class="catalog-menu-category__item">
+                                            <a href="#" class="catalog-menu-category__title">Dell</a>
+                                        </li>
+                                        <li class="catalog-menu-category__item">
+                                            <a href="#" class="catalog-menu-category__title">Huawei</a>
+                                        </li>
+                                        <li class="catalog-menu-category__item">
+                                            <a href="#" class="catalog-menu-category__title">Fortinet</a>
+                                        </li>
+                                        <li class="catalog-menu-category__item">
+                                            <a href="#" class="catalog-menu-category__title">Juniper</a>
+                                        </li>
+                                        <li class="catalog-menu-category__item">
+                                            <a href="#" class="catalog-menu-category__title">Hikvision</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="header-menu">
+                                <a href="" class="header-menu__link">О компании</a>
+                                <a href="" class="header-menu__link">Как сделать заказ</a>
+                                <a href="" class="header-menu__link">Контакты</a>
+
+                            </div>
+                        </div>
+                        <div class="header-operation-right">
+                            <div class="header-phone">
+                                <a href="tel:74997045686" class="header-phone__link">+7 (499) 704-56-86</a>
+                            </div>
+                            <div class="header-auth">
+                                <a href="#" class="header-auth__link">Войти</a>
+                            </div>
+                            <div class="header-basket">
+                                <a href="#" class="header-basket__link">
+                                    <span class="header-basket__count">0</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                <!--</div>-->
+
+                <!--<div class="header-search-layout">-->
+                    <div class="header-search">
+                        <input type="text" name="header-search" id="header-search" class="header-search-input" placeholder="Поиск по каталогу">
+                    </div>
+                <!--</div>-->
+            </div>
+
+        </div>
+    </div>
 </header>
 <main class="main">
     <div class="slider"></div>
@@ -160,11 +230,98 @@
 
         <div class="reviews">
             <h2 class="c-title">Последние отзывы на товары</h2>
+            <div class="reviews-list">
+                <div class="reviews-list__item">
+                    <div class="reviews-card">
+                        <div class="reviews-card__img">
+                            <div>
+                                <img src="./img/reviews-product-1.jpg" alt="reviews-product-1">
+                            </div>
+                        </div>
+                        <div class="reviews-card__body">
+                            <div class="reviews-card__rating"></div>
+                            <div class="reviews-card__title">
+                                <a href="#">Wi-Fi роутер TP-Link TL-WR841N V14.0</a>
+                            </div>
+                            <div class="reviews-card__about">
+                                <span class="reviews-card__name">Евгений</span> /
+                                <span class="reviews-card__date">26.07.19</span>
+                            </div>
+                            <div class="reviews-card__text">
+                                Пользуемся в течение месяца, роутер
+                                стоит в шкафу, но при этом качество
+                                сигнала не страдает. При настройке
+                                возникла одна трудность, но опытным
+                                путем её быстро устранила.
+                            </div>
+                            <a href="#" class="reviews-card__more">Читать отзыв</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>
 <footer class="footer">
-    <div class="layout"></div>
+
+    <div class="layout">
+        <div class="footer-top">
+            <div class="footer-menu">
+                <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">Каталог товаров</a>
+                </div>
+                <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">Как сделать заказ</a>
+                </div>
+                <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">О компании</a>
+                </div>
+                <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">Контакты</a>
+                </div>
+
+            </div>
+
+            <div class="footer-social">
+                <div class="c-social">
+                    <a href="#" class="c-social-card" style="background-color:#005e8f;">
+
+                    </a>
+                    <a href="#" class="c-social-card" style="background-color:#52a6d2;">
+
+                    </a>
+                    <a href="#" class="c-social-card" style="background-color:#f35d28;">
+
+                    </a>
+                    <a href="#" class="c-social-card" style="background-color:#cb3002;">
+
+                    </a>
+                </div>
+            </div>
+            <div class="footer-subscription">
+                <div class="c-subscription">
+                    <form action="" method="POST" class="c-form">
+                        <div class="c-form__item"></div>
+                        <div class="c-subscription__text">Подпишитесь! Новинки, скидки, предложения!</div>
+                        <div class="c-subscription-form">
+                            <input type="text" class="c-subscription-input" name="footer-subscription">
+                            <input type="submit" value="Подписаться" class="c-subscription-btn">
+
+                        </div>
+                        <div class="c-subscription__text">
+                            Нажимая кнопку подписаться, Вы соглашаетесь с <a href="#">политикой конфиденциальности.</a>
+                            Мы никогда не передадим Ваши персональные данные третьим лицам.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="footer-bottom">
         <div class="layout">
             <div class="footer-bottom-grid">
