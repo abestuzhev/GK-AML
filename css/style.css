@@ -140,6 +140,13 @@ table {
 div {
   display: block; }
 
+@font-face {
+  font-family: 'Days';
+  src: url("../fonts/Days.eot");
+  src: local("Days"), url("../fonts/Days.eot?#iefix") format("embedded-opentype"), url("../fonts/Days.woff") format("woff"), url("../fonts/Days.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 .icon-logo {
   display: inline-block;
   fill: #b5b5b5;
@@ -153,6 +160,20 @@ div {
   font-size: 17px;
   width: 1em;
   height: 1em; }
+
+.icon-user {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 16px;
+  width: 1em;
+  height: 1.1em; }
+
+.icon-basket {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 15px;
+  width: 1em;
+  height: 1.15em; }
 
 .c-title {
   font-size: 30px;
@@ -440,9 +461,16 @@ body, html {
     font-size: 13px;
     color: #1e1c27;
     display: block;
-    padding: 10px 15px; }
+    padding: 10px 15px 10px 24px;
+    position: relative; }
+    .header-phone__link .icon-phone {
+      position: absolute;
+      left: 0;
+      top: 8px; }
     .header-phone__link:hover {
       color: #f06314; }
+      .header-phone__link:hover .icon-phone {
+        fill: #f06314; }
   .header-auth {
     border-left: 1px solid #e3e3e3; }
     .header-auth__link {
@@ -450,15 +478,29 @@ body, html {
       font-size: 13px;
       color: #1e1c27;
       display: block;
-      padding: 10px 15px; }
+      padding: 10px 15px 10px 41px;
+      position: relative; }
+      .header-auth__link .icon-user {
+        position: absolute;
+        left: 15px;
+        top: 8px; }
       .header-auth__link:hover {
         color: #f06314; }
+        .header-auth__link:hover .icon-user {
+          fill: #f06314; }
   .header-basket {
     border-left: 1px solid #e3e3e3; }
     .header-basket__link {
       display: block;
-      padding: 8px 7px 8px 14px;
-      text-decoration: none; }
+      padding: 8px 7px 8px 38px;
+      text-decoration: none;
+      position: relative; }
+      .header-basket__link .icon-basket {
+        position: absolute;
+        left: 12px;
+        top: 8px; }
+      .header-basket__link:hover .icon-basket {
+        fill: #f06314; }
     .header-basket__count {
       position: relative;
       z-index: 2;
@@ -511,7 +553,67 @@ body, html {
       background-color: transparent; }
 
 .slider {
-  margin-bottom: 64px; }
+  margin-bottom: 64px;
+  position: relative; }
+  .slider-item {
+    height: 530px;
+    background-size: cover;
+    background-position: 50% 50%; }
+    .slider-item__body {
+      padding-top: 80px; }
+    .slider-item__title {
+      font-family: 'Days', sans-serif;
+      margin-bottom: 30px;
+      font-size: 50px;
+      line-height: 1.2;
+      color: #ffffff; }
+    .slider-item__text {
+      margin-bottom: 37px;
+      font-size: 20px;
+      color: #ffffff; }
+    .slider-item__btn {
+      font-family: 'Days', sans-serif;
+      display: inline-block;
+      line-height: 1;
+      background-color: #ef6314;
+      border-radius: 150px;
+      padding: 16px 30px;
+      color: #ffffff;
+      text-decoration: none; }
+
+.slick-slider .slick-next {
+  right: 13%;
+  z-index: 9;
+  width: 86px;
+  height: 86px;
+  background: url(../img/slick-arrow-next.png) 0 0 no-repeat; }
+
+.slick-slider .slick-prev {
+  left: 37%;
+  z-index: 9;
+  width: 86px;
+  height: 86px;
+  background: url(../img/slick-arrow-prev.png) 0 0 no-repeat; }
+
+.slick-prev:before,
+.slick-next:before {
+  content: '';
+  display: none; }
+
+.slick-dots {
+  bottom: 14px;
+  width: auto;
+  right: 36%; }
+
+.slick-dots li {
+  width: 5px; }
+
+.slick-dots li.slick-active button:before {
+  color: #f06314; }
+
+.slick-dots li button:before {
+  opacity: .75;
+  color: #fff; }
 
 .advantages {
   margin-bottom: 60px; }

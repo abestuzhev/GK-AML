@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>gk-aml</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -63,10 +65,14 @@
                                 </a>
                             </div>
                             <div class="header-auth">
-                                <a href="#" class="header-auth__link">Войти</a>
+                                <a href="#" class="header-auth__link">
+                                    <svg class="icon-user"><use xlink:href="./img/main.svg#icon-user"/></svg>
+                                    Войти
+                                </a>
                             </div>
                             <div class="header-basket">
                                 <a href="#" class="header-basket__link">
+                                    <svg class="icon-basket"><use xlink:href="./img/main.svg#icon-basket"/></svg>
                                     <span class="header-basket__count">0</span>
                                 </a>
                             </div>
@@ -86,7 +92,36 @@
     </div>
 </header>
 <main class="main">
-    <div class="slider"></div>
+    <div class="slider">
+        <div class="slider-item" style="background-image:url(./img/slide-1.jpg);">
+            <div class="layout">
+                <div class="slider-item__body">
+                    <div class="slider-item__title">P05524-B21 - HPE DL380 <br>Gen10 Server</div>
+                    <div class="slider-item__text">
+                        HPE ProLiant DL380 Gen10<br>
+                        4110 2.1GHz 8-core 1P 16GB-R<br>
+                        P408i-a 8SFF 500W RPS Solution<br>
+                        Server
+                    </div>
+                    <a href="#" class="slider-item__btn">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-item" style="background-image:url(./img/slide-1.jpg);">
+            <div class="layout">
+                <div class="slider-item__body">
+                    <div class="slider-item__title">P05524-B21 - HPE DL380 <br>Gen10 Server</div>
+                    <div class="slider-item__text">
+                        HPE ProLiant DL380 Gen10<br>
+                        4110 2.1GHz 8-core 1P 16GB-R<br>
+                        P408i-a 8SFF 500W RPS Solution<br>
+                        Server
+                    </div>
+                    <a href="#" class="slider-item__btn">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="layout">
         <div class="advantages">
             <div class="advantages-list">
@@ -94,7 +129,7 @@
                     <div class="advantages-card">
                         <div class="advantages-card-layout">
                             <div class="advantages-card__icon">
-                                <img src="./img/icon/icon-advantages-1.svg" alt="">
+                                <img src="./img/advantages-img-1.png" alt="">
                             </div>
                             <div class="advantages-card__title">
                                 Широкий ассортимент
@@ -108,7 +143,7 @@
                     <div class="advantages-card">
                         <div class="advantages-card-layout">
                             <div class="advantages-card__icon">
-                                <img src="./img/icon/icon-advantages-1.svg" alt="">
+                                <img src="./img/advantages-img-2.png" alt="">
                             </div>
                             <div class="advantages-card__title">
                                 Выгодная цена
@@ -122,7 +157,7 @@
                     <div class="advantages-card">
                         <div class="advantages-card-layout">
                             <div class="advantages-card__icon">
-                                <img src="./img/icon/icon-advantages-1.svg" alt="">
+                                <img src="./img/advantages-img-3.png" alt="">
                             </div>
                             <div class="advantages-card__title">
                                 нам доверяют бренды
@@ -136,7 +171,7 @@
                     <div class="advantages-card">
                         <div class="advantages-card-layout">
                             <div class="advantages-card__icon">
-                                <img src="./img/icon/icon-advantages-1.svg" alt="">
+                                <img src="./img/advantages-img-4.png" alt="">
                             </div>
                             <div class="advantages-card__title">
                                 Доставка по всей России
@@ -150,7 +185,7 @@
                     <div class="advantages-card">
                         <div class="advantages-card-layout">
                             <div class="advantages-card__icon">
-                                <img src="./img/icon/icon-advantages-1.svg" alt="">
+                                <img src="./img/advantages-img-4.png" alt="">
                             </div>
                             <div class="advantages-card__title">
                                 Работаем 24/7
@@ -244,7 +279,9 @@
                             </div>
                         </div>
                         <div class="reviews-card__body">
-                            <div class="reviews-card__rating"></div>
+                            <div class="reviews-card__rating">
+                                <img src="./img/rating.png" alt="">
+                            </div>
                             <div class="reviews-card__title">
                                 <a href="#">Wi-Fi роутер TP-Link TL-WR841N V14.0</a>
                             </div>
@@ -352,6 +389,9 @@
 
 
 <!--scripts-->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick-1.8.1/slick/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
