@@ -95,6 +95,34 @@
         margin-right: 6px;
         //position: relative;
         //z-index: 10;
+
+
+        &-icon {
+            position: absolute;
+            z-index: 12;
+            top: 12px;
+            left: 8px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-end;
+            align-items: flex-end;
+            span:nth-child(1) {
+                display: block;
+                background-color: #fff;
+                border-radius: 150px;
+                height: 4px;
+                width: 14px;
+                margin-bottom: 2px;
+            }
+            span:nth-child(2) {
+                display: block;
+                background-color: #fff;
+                border-radius: 150px;
+                height: 4px;
+                width: 10px;
+            }
+        }
+
         &__link {
             display: block;
             padding: 10px 18px 10px 30px;
@@ -302,6 +330,13 @@
         position: relative;
         margin-left: 14px;
 
+        .icon-search {
+            position: absolute;
+            top: 15px;
+            left: 5px;
+            z-index: 2;
+        }
+
 
         &::before {
             content: '';
@@ -421,10 +456,12 @@
     display: none;
 }
 
-.slick-dots {
-    bottom: 14px;
-    width:auto;
+.slider .slick-dots {
     right: 36%;
+    width:auto;
+}
+.slider .slick-dots {
+    bottom: 14px;
 }
 
 .slick-dots li {
@@ -434,9 +471,14 @@
 .slick-dots li.slick-active button:before {
     color: #f06314;
 }
-.slick-dots li button:before {
+.slider .slick-dots li button:before {
     opacity: .75;
     color: #fff;
+}
+
+.slick-dots li button:before {
+    opacity: 1;
+    color: #d9d9d9;
 }
 
 
@@ -460,9 +502,12 @@
         min-width: 200px;
         height: 250px;
         position: relative;
-        background-color: #eff0f2;
+        //background-color: #eff0f2;
         border-radius: 400px;
         font-family: sans-serif;
+        background: url(../img/round-bg.png) 0 0 no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
 
         &::after {
             content: '';
@@ -582,9 +627,10 @@
 
 /*reviews*/
 .reviews {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 
     &-list {
+        margin-top: 10px;
 
         &__item {
             width: 25%;
@@ -772,5 +818,11 @@
 
         }
 
+    }
+
+    .icon-email {
+        position: relative;
+        top: 2px;
+        margin-right: 4px;
     }
 }

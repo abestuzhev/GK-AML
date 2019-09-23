@@ -4,6 +4,26 @@
   font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-bottom: 18px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        display: inline-block;
+        margin-right: 6px;
+    }
+
+    &-more {
+        margin-left: 10px;
+        background-color: #f06314;
+        color: #ffffff;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 12px;
+        display: inline-block;
+        text-decoration: none;
+    }
 }
 
 body, html {

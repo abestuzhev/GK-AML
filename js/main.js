@@ -5,9 +5,10 @@ $(function(){
     });
 
     $('.reviews-list').slick({
-        dots: false,
+        dots: true,
+        arrows:false,
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToShow: 4,
+        slidesToScroll: 4
     });
 });

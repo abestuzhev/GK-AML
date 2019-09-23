@@ -175,12 +175,51 @@ div {
   width: 1em;
   height: 1.15em; }
 
+.icon-search {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 17px;
+  width: 1em;
+  height: .8em; }
+
+.icon-email {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 17px;
+  width: 1em;
+  height: .7em; }
+
 .c-title {
   font-size: 30px;
   color: #293439;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .c-title span {
+    display: inline-block;
+    margin-right: 6px; }
+  .c-title-more {
+    margin-left: 10px;
+    background-color: #f06314;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none; }
 
 body, html {
   font-family: 'Roboto', sans-serif; }
@@ -369,6 +408,37 @@ body, html {
       z-index: 5; }
   .header-catalog {
     margin-right: 6px; }
+    .header-catalog-icon {
+      position: absolute;
+      z-index: 12;
+      top: 12px;
+      left: 8px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+      .header-catalog-icon span:nth-child(1) {
+        display: block;
+        background-color: #fff;
+        border-radius: 150px;
+        height: 4px;
+        width: 14px;
+        margin-bottom: 2px; }
+      .header-catalog-icon span:nth-child(2) {
+        display: block;
+        background-color: #fff;
+        border-radius: 150px;
+        height: 4px;
+        width: 10px; }
     .header-catalog__link {
       display: block;
       padding: 10px 18px 10px 30px;
@@ -520,6 +590,11 @@ body, html {
     background-color: #fff;
     position: relative;
     margin-left: 14px; }
+    .header-search .icon-search {
+      position: absolute;
+      top: 15px;
+      left: 5px;
+      z-index: 2; }
     .header-search::before {
       content: '';
       position: absolute;
@@ -600,10 +675,12 @@ body, html {
   content: '';
   display: none; }
 
-.slick-dots {
-  bottom: 14px;
-  width: auto;
-  right: 36%; }
+.slider .slick-dots {
+  right: 36%;
+  width: auto; }
+
+.slider .slick-dots {
+  bottom: 14px; }
 
 .slick-dots li {
   width: 5px; }
@@ -611,9 +688,13 @@ body, html {
 .slick-dots li.slick-active button:before {
   color: #f06314; }
 
-.slick-dots li button:before {
+.slider .slick-dots li button:before {
   opacity: .75;
   color: #fff; }
+
+.slick-dots li button:before {
+  opacity: 1;
+  color: #d9d9d9; }
 
 .advantages {
   margin-bottom: 60px; }
@@ -640,9 +721,10 @@ body, html {
     min-width: 200px;
     height: 250px;
     position: relative;
-    background-color: #eff0f2;
     border-radius: 400px;
-    font-family: sans-serif; }
+    font-family: sans-serif;
+    background: url(../img/round-bg.png) 0 0 no-repeat;
+    background-size: cover; }
     .advantages-card::after {
       content: '';
       border: 1px solid #dbdcde;
@@ -754,9 +836,11 @@ body, html {
 
 /*reviews*/
 .reviews {
-  margin-bottom: 60px; }
-  .reviews-list__item {
-    width: 25%; }
+  margin-bottom: 80px; }
+  .reviews-list {
+    margin-top: 10px; }
+    .reviews-list__item {
+      width: 25%; }
   .reviews-card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -910,3 +994,7 @@ body, html {
       text-decoration: none;
       font-weight: 300;
       font-size: 13px; }
+  .footer .icon-email {
+    position: relative;
+    top: 2px;
+    margin-right: 4px; }
