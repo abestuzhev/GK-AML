@@ -47,17 +47,45 @@
 }
 
 .icon-facebook {
-
+    display: inline-block;
+    fill: #b5b5b5;
+    font-size: 8px;
+    width: 1em;
+    height: 2em;
 }
 
 .icon-twitter {
-
+    display: inline-block;
+    fill: #b5b5b5;
+    font-size: 17px;
+    width: 1em;
+    height: .8em;
 }
 
 .icon-googleplus {
-
+    display: inline-block;
+    fill: #b5b5b5;
+    font-size: 19px;
+    width: 1em;
+    height: .8em;
 }
 
 .icon-youtube {
+    display: inline-block;
+    fill: #b5b5b5;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+}
 
+.icon-arrow-up,
+.icon-arrow-down,
+.icon-arrow-left,
+.icon-arrow-right,
+.icon-close {
+    display: inline-block;
+    fill: #b5b5b5;
+    font-size: 12px;
+    width: 1em;
+    height: 1em;
 }

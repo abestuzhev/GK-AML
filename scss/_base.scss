@@ -31,7 +31,13 @@ body, html {
 }
 
 .c-input {
-
+    border: 1px solid #e5e5e5;
+    outline:none;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: #5d5d5d;
+    width: 100%;
 }
 
 .c-social {
@@ -39,12 +45,22 @@ body, html {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+
     &-card {
         display: block;
         width: 30px;
         height: 30px;
         border-radius: 150px;
         margin-right: 9px;
+        position: relative;
+
+        svg {
+            fill: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+        }
 
         &:last-child {
             margin-right: 0;
@@ -91,6 +107,15 @@ body, html {
         border:none;
         outline:none;
         cursor: pointer;
+        transition:all .1s ease-in-out;
+
+        &:hover {
+            color: #ef6314;
+            background-color: #fff;
+            transition:all .1s ease-in-out;
+        }
+
+
 
     }
 
