@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/scss/_main.scss" line="949" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/scss/_main.scss" line="950" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d94cae36-75e8-4a6e-b215-e46a0f3a90d7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_main.scss" afterPath="$PROJECT_DIR$/scss/_main.scss" />
     </list>
     <ignored path="GK-AML.iws" />
@@ -56,8 +54,8 @@
           <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+                <state relative-caret-position="238">
+                  <caret line="203" column="78" selection-start-line="203" selection-start-column="78" selection-end-line="203" selection-end-column="78" />
                   <folding />
                 </state>
               </provider>
@@ -96,8 +94,8 @@
           <file leaf-file-name="_main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/_main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="366">
-                  <caret line="170" column="31" selection-start-line="168" selection-start-column="12" selection-end-line="170" selection-end-column="31" />
+                <state relative-caret-position="553">
+                  <caret line="181" column="28" selection-start-line="181" selection-start-column="22" selection-end-line="181" selection-end-column="28" />
                   <folding>
                     <element signature="e#694#1989#0" expanded="false" />
                   </folding>
@@ -158,8 +156,8 @@
         <option value="$PROJECT_DIR$/img/main.svg" />
         <option value="$PROJECT_DIR$/scss/_base.scss" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/scss/_main.scss" />
+        <option value="$PROJECT_DIR$/home.html" />
       </list>
     </option>
   </component>
@@ -269,12 +267,12 @@
       <workItem from="1569175376240" duration="1772000" />
       <workItem from="1569218082626" duration="12576000" />
       <workItem from="1569350127288" duration="8744000" />
-      <workItem from="1569390739246" duration="5681000" />
+      <workItem from="1569390739246" duration="5910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42138000" />
+    <option name="totallyTimeSpent" value="42367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="0" />
@@ -596,21 +594,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="170" column="31" selection-start-line="168" selection-start-column="12" selection-end-line="170" selection-end-column="31" />
+        <state relative-caret-position="553">
+          <caret line="181" column="28" selection-start-line="181" selection-start-column="22" selection-end-line="181" selection-end-column="28" />
           <folding>
             <element signature="e#694#1989#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="203" column="78" selection-start-line="203" selection-start-column="78" selection-end-line="203" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
     </entry>

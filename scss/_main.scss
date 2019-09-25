@@ -179,6 +179,7 @@
             flex-flow: row nowrap;
             justify-content: flex-start;
             align-items: stretch;
+            overflow: hidden;
 
             &-category {
                 max-width: 180px;

@@ -566,7 +566,8 @@ body, html {
               justify-content: flex-start;
       -webkit-box-align: stretch;
           -ms-flex-align: stretch;
-              align-items: stretch; }
+              align-items: stretch;
+      overflow: hidden; }
       .header-catalog .catalog-menu-category {
         max-width: 180px;
         border-right: 1px solid #e5e5e5;
