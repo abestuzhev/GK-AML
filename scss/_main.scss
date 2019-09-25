@@ -355,7 +355,7 @@
 
         &__link {
             display: block;
-            padding: 8px 24px 8px 43px;
+            padding: 6px 24px 6px 40px;
             text-decoration: none;
             position: relative;
 
@@ -367,12 +367,17 @@
                 }
 
                 .header-basket__count {
-                    color: #f06314;
 
-                    &::after {
-                        content: '';
-                        background-color: #fff;
+                    background-color: #fff;
+
+                    span {
+                        color: #f06314;
                     }
+                    //
+                    //&::after {
+                    //    content: '';
+                    //
+                    //}
                 }
 
                 &:hover {
@@ -384,7 +389,7 @@
 
             .icon-basket  {
                 position: absolute;
-                left: 12px;
+                left: 16px;
                 top: 8px;
             }
 
@@ -399,23 +404,35 @@
         &__count {
             position: relative;
             z-index: 2;
-            color: #ffffff;
-            font-size: 13px;
-            line-height: 13px;
+            display: block;
+            border-radius: 150px;
+            width: 22px;
+            height: 22px;
+            background-color: #f06314;
 
-
-
-            &::after {
-                content: '';
+            span {
                 position: absolute;
-                z-index: -1;
-                border-radius: 150px;
-                width: 22px;
-                height: 22px;
-                top: -4px;
-                left: -7px;
-                background-color: #f06314;
+                top: 50%;
+                left: 50%;
+                transform:translate(-50%,-50%);
+                color: #ffffff;
+                font-size: 13px;
+                line-height: 13px;
             }
+
+
+
+            //&::after {
+            //    content: '';
+            //    position: absolute;
+            //    z-index: -1;
+            //    border-radius: 150px;
+            //    width: 22px;
+            //    height: 22px;
+            //    top: -4px;
+            //    left: -7px;
+            //    background-color: #f06314;
+            //}
 
         }
 
@@ -572,8 +589,8 @@
 
     &__close {
         position: absolute;
-        right: 5px;
-        top: 4px;
+        right: 10px;
+        top: 9px;
         width: 25px;
         height: 25px;
 
