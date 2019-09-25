@@ -34,6 +34,20 @@ $(function () {
         $('.popup-search').removeClass('is-show');
     });
 
+    $(".catalog-menu-category__item").on({
+
+        mouseenter: function () {
+            var category = '#' + $(this).data('category');
+            $(category).addClass('is-show');
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active');
+            $(category).siblings().removeClass('is-show');
+        },
+        mouseleave: function () {
+
+        }
+    });
+
 
 
     $(document).mousedown(function (e) { // событие клика по веб-документу
