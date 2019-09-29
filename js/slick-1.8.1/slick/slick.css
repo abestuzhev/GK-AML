@@ -105,6 +105,7 @@
 .slick-loading .slick-slide
 {
     visibility: hidden;
+    display: none;
 }
 .slick-vertical .slick-slide
 {
