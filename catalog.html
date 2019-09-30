@@ -470,7 +470,7 @@
     </div>
     <div class="layout">
 
-        <ul class="slider-category slick-load">
+        <ul class="slider-category slider-carousel slick-load">
             <!--START slider-category__item-->
             <li class="slider-category__item">
                 <div class="slider-category-card">
@@ -564,7 +564,16 @@
                     <div class="filter-item">
                         <a href="#" class="filter-item-title">Цена</a>
                         <div class="filter-box">
-
+                            <div class="range-slider">
+                                <div class="formCost">
+                                    <input type="text" class="form__input range-slider__minCost-price" value="0"/>
+                                    <span> − </span>
+                                    <input type="text" class="form__input range-slider__maxCost-price" value="99999"/>
+                                </div>
+                                <div class="sliderCont">
+                                    <div class="range-slider_default range-slider__price"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!--END filter-item-->
@@ -1118,6 +1127,8 @@
 <!--scripts-->
 
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
 <script src="js/slick-1.8.1/slick/slick.min.js"></script>
 <script src="js/sumoselect/jquery.sumoselect.min.js"></script>
 <script src="js/main.js"></script>
