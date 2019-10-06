@@ -215,5 +215,33 @@ $(function () {
 
     rangeSlider('.range-slider__price', '.range-slider__minCost-price', '.range-slider__maxCost-price', 5000);
 
+    $(document).on('click', '.c-tabs-menu a', function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("current");
+        $(this).parent().siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        $('.c-tabs-body').find(".tab-content").not(tab).css("display", "none");
+        // $(this).parents('.tabs-menu').parent().siblings('.tab').find(".tab-content").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
 
+
+    $('.product-slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.product-slider-nav'
+    });
+    $('.product-slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product-slider-for',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        vertical: true,
+        verticalSwiping: true
+    });
+    
 });
