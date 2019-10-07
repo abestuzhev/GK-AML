@@ -2103,7 +2103,6 @@ body, html {
       height: 21px;
       color: #a6a6a6; }
       .catalog-card__sale span {
-        text-decoration: line-through;
         color: #293439; }
     .catalog-card__price {
       color: #a6a6a6;
@@ -2111,7 +2110,7 @@ body, html {
       margin-bottom: 10px; }
       .catalog-card__price span {
         font-size: 18px;
-        color: #293439; }
+        color: #f06314; }
     .catalog-card__discount {
       font-weight: 500;
       font-size: 14px !important;
@@ -2319,8 +2318,7 @@ body, html {
     font-weight: 700;
     color: #f06314; }
   .product-card-info__sale {
-    color: #293439;
-    text-decoration: line-through; }
+    color: #293439; }
   .product-card-info__currency {
     color: #a6a6a6 !important; }
   .product-card-info__availability {
@@ -2449,7 +2447,7 @@ body, html {
       width: 79px !important; }
     .product-slider-nav .slick-prev {
       bottom: -10px;
-      left: 28px;
+      left: 26px;
       top: auto;
       background: url(../img/icon-arrow-bottom.png) 50% 0 no-repeat; }
       .product-slider-nav .slick-prev::before {
@@ -2457,7 +2455,7 @@ body, html {
         display: none; }
     .product-slider-nav .slick-next {
       top: 14px;
-      left: 28px;
+      left: 26px;
       background: url(../img/icon-arrow-top.png) 50% 0 no-repeat; }
       .product-slider-nav .slick-next::before {
         content: '';

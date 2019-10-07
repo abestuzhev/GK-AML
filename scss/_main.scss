@@ -1704,7 +1704,7 @@
             color: #a6a6a6;
 
             span {
-                text-decoration: line-through;
+                //text-decoration: line-through;
                 color: #293439;
             }
         }
@@ -1716,7 +1716,7 @@
 
             span {
                 font-size: 18px;
-                color: #293439;
+                color: #f06314;
             }
         }
 
@@ -1949,7 +1949,7 @@
 
         &__sale {
             color: #293439;
-            text-decoration: line-through;
+            //text-decoration: line-through;
         }
 
         &__currency {
@@ -2095,7 +2095,7 @@
 
         .slick-prev {
             bottom: -10px;
-            left:28px;
+            left:26px;
             top: auto;
             background: url(../img/icon-arrow-bottom.png) 50% 0 no-repeat;
 
@@ -2107,7 +2107,7 @@
 
         .slick-next {
             top: 14px;
-            left:28px;
+            left:26px;
             background: url(../img/icon-arrow-top.png) 50% 0 no-repeat;
 
             &::before {
