@@ -395,5 +395,20 @@ body, html {
     }
 }
 
+.c-btn {
+    display: inline-block;
+    padding: 11px 34px;
+    font-size: 15px;
+    color: #188cca;
+    border: 1px solid #188cca;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
 
+    &:hover {
+        border-color: #ef6314;
+        color: #ef6314;
+        transition: all .1s ease-in-out;
+    }
+}
 

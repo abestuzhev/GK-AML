@@ -2138,6 +2138,134 @@
             }
         }
     }
+}
 
 
+.category {
+    &-head {
+        color: #293439;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &-title {
+        font-size: 30px;
+        margin-bottom: 6px;
+    }
+
+    &-subtitle {
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    &-body {
+
+    }
+
+    &-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: 10px;
+
+        &__item {
+            width: 25%;
+            padding: 10px;
+        }
+    }
+
+    &-card {
+        padding: 30px 30px 60px;
+        border: 1px solid #e5e5e5;
+        color: #293439;
+        background-color: #fff;
+        transition:all .1s ease-in-out;
+        position: relative;
+        height: 100%;
+
+        &:hover {
+            border-color: #f06314;
+            box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.11);
+            transition:all .1s ease-in-out;
+
+            .category-card__btn {
+                color: #f06314;
+                transition:all .1s ease-in-out;
+            }
+        }
+
+        &__img {
+            height: 100px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                max-width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform:translate(-50%,-50%);
+            }
+
+        }
+
+        &__title {
+            font-size: 18px;
+            color: #293439;
+            line-height: 1;
+            text-align: center;
+            margin-bottom: 17px;
+        }
+
+        &__body {
+
+        }
+
+
+        &__desc {
+            color: #293439;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        &-list {
+            &__item {
+                margin-bottom: 7px;
+                display: block;
+                a {
+                    font-size: 14px;
+                    color: #188cca;
+                    text-decoration: none;
+                    display: inline-block;
+                    line-height: 1;
+                    transition:all .1s ease-in-out;
+
+                    &:hover {
+                        color: #f06314;
+                        transition:all .1s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        &__footer {
+            position: absolute;
+            bottom: 30px;
+        }
+
+        &__btn {
+            font-size: 14px;
+            color: #293439;
+            text-decoration: none;
+            transition:all .1s ease-in-out;
+        }
+    }
+
+    &-footer {
+        text-align: center;
+    }
 }
