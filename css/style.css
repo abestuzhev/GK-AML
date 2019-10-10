@@ -257,6 +257,13 @@ div {
   width: 1em;
   height: 1em; }
 
+.icon-basket-del {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 16px;
+  width: 1em;
+  height: 1.2em; }
+
 .c-title {
   font-size: 30px;
   color: #293439;
@@ -290,7 +297,28 @@ div {
     text-decoration: none; }
 
 body, html {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  height: 100%; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%; }
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
+.footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
 
 .c-input {
   border: 1px solid #e5e5e5;
@@ -627,7 +655,8 @@ body, html {
 
 .layout {
   max-width: 1380px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100%; }
 
 .header {
   display: -webkit-box;
@@ -2612,3 +2641,128 @@ body, html {
 
 .category-footer {
   text-align: center; }
+
+/*----------------------------*/
+.error-page {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 30px 16px; }
+  .error-page-message {
+    max-width: 480px;
+    color: #293439;
+    text-align: center; }
+    .error-page-message__img {
+      margin-bottom: 35px; }
+    .error-page-message__title {
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-bottom: 14px; }
+    .error-page-message__text {
+      font-size: 14px;
+      line-height: 1.5;
+      text-transform: uppercase; }
+
+/*-----------------------------*/
+.basket-title {
+  margin-bottom: 20px;
+  color: #293439;
+  font-size: 30px;
+  font-weight: 500; }
+
+.basket-list {
+  width: 900px;
+  border: 1px solid #e5e5e5; }
+  .basket-list-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    background-color: #fafafa; }
+  .basket-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+  .basket-list-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 24px 16px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5; }
+    .basket-list-col:last-child {
+      border-bottom: none; }
+  .basket-list-product {
+    width: 48%; }
+  .basket-list-price {
+    width: 18%; }
+  .basket-list-quantity {
+    width: 12%; }
+  .basket-list-total {
+    width: 12%; }
+    .basket-list-total__price {
+      font-size: 14px;
+      color: #293439; }
+  .basket-list-del {
+    width: 10%; }
+    .basket-list-del__btn {
+      cursor: pointer;
+      display: block;
+      padding: 30px 20px; }
+  .basket-list-title {
+    text-align: center;
+    padding: 11px;
+    border-bottom: 1px solid #e5e5e5; }
+
+.basket-price {
+  text-align: right; }
+  .basket-price-old {
+    color: #a6a6a6; }
+    .basket-price-old span {
+      font-size: 14px;
+      color: #293439; }
+  .basket-price-sale {
+    color: #a6a6a6;
+    margin-bottom: 13px; }
+    .basket-price-sale span {
+      font-size: 14px;
+      color: #f06314;
+      font-weight: 700; }
+  .basket-price-discount {
+    font-size: 13px;
+    color: #293439;
+    text-align: center; }
+    .basket-price-discount__mess {
+      color: #f06314; }
