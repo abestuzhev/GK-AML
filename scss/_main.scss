@@ -899,6 +899,7 @@
 
     &-card {
         min-width: 200px;
+        max-width: 250px;
         height: 250px;
         position: relative;
         //background-color: #eff0f2;
@@ -940,6 +941,9 @@
             font-size: 13px;
             text-transform: uppercase;
             line-height: 1.2;
+            font-family: 'Days', sans-serif;
+            font-weight: 700;
+            color: #293439;
         }
 
         &__icon {
@@ -2619,5 +2623,44 @@
             font-weight: 700;
         }
 
+    }
+}
+
+
+/*about*/
+/*------------------------*/
+.about {
+    &-text {
+        max-width: 80%;
+        line-height: 1.5;
+        font-size: 14px;
+        margin-bottom: 20px;
+
+        p {
+            line-height: 1.5;
+            font-size: 14px;
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin-bottom: 15px;
+
+        &__item {
+            width: 25%;
+            margin-right: 30px;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .advantages-list__item {
+        width: 25%;
     }
 }

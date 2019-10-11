@@ -315,6 +315,12 @@ body, html {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto; }
 
+.main-title {
+  margin-bottom: 20px;
+  color: #293439;
+  font-size: 30px;
+  font-weight: 500; }
+
 .footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -1477,6 +1483,7 @@ body, html {
       width: 20%; }
   .advantages-card {
     min-width: 200px;
+    max-width: 250px;
     height: 250px;
     position: relative;
     border-radius: 400px;
@@ -1518,7 +1525,10 @@ body, html {
       text-align: center;
       font-size: 13px;
       text-transform: uppercase;
-      line-height: 1.2; }
+      line-height: 1.2;
+      font-family: 'Days', sans-serif;
+      font-weight: 700;
+      color: #293439; }
     .advantages-card__icon {
       margin-bottom: 16px; }
 
@@ -2999,3 +3009,39 @@ body, html {
   font-size: 20px;
   color: #f06314;
   font-weight: 700; }
+
+/*about*/
+/*------------------------*/
+.about-text {
+  max-width: 80%;
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 20px; }
+  .about-text p {
+    line-height: 1.5;
+    font-size: 14px; }
+
+.about-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 15px; }
+  .about-list__item {
+    width: 25%;
+    margin-right: 30px;
+    margin-bottom: 15px; }
+    .about-list__item:last-child {
+      margin-right: 0; }
+
+.about .advantages-list__item {
+  width: 25%; }
