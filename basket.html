@@ -472,64 +472,251 @@
         <div class="layout">
             <div class="basket">
                 <h1 class="basket-title">Корзина</h1>
-                <div class="basket-list">
-                    <div class="basket-list-head">
-                        <div class="basket-list-product">
-                            <div class="basket-list-title">Товары</div>
-                        </div>
-                        <div class="basket-list-price">
-                            <div class="basket-list-title">Цена</div>
-                        </div>
-                        <div class="basket-list-quantity">
-                            <div class="basket-list-title">Кол-во</div>
-                        </div>
-                        <div class="basket-list-total">
-                            <div class="basket-list-title">Итого</div>
-                        </div>
-                        <div class="basket-list-del">
+                <div class="basket-grid">
+                    <div class="basket-col">
+                        <div class="basket-list">
+                            <div class="basket-list-head">
+                                <div class="basket-list-head__item basket-list-product">
+                                    <div class="basket-list-title">Товары</div>
+                                </div>
+                                <div class="basket-list-head__item basket-list-price">
+                                    <div class="basket-list-title">Цена</div>
+                                </div>
+                                <div class="basket-list-head__item basket-list-quantity">
+                                    <div class="basket-list-title">Кол-во</div>
+                                </div>
+                                <div class="basket-list-head__item basket-list-total">
+                                    <div class="basket-list-title">Итого</div>
+                                </div>
+                                <div class="basket-list-head__item basket-list-del">
 
+                                </div>
+                            </div>
+                            <div class="basket-list-body">
+                                <!--START basket-list__item-->
+                                <div class="basket-list__item">
+                                    <div class="basket-list-col basket-list-product">
+                                        <div class="basket-product">
+                                            <div class="basket-product__img">
+                                                <img src="./img/basket-img-1.jpg" alt="">
+                                            </div>
+                                            <div class="basket-product__body">
+                                                <div class="basket-product__title">Маршрутизатор Cisco ISR4331-SEC/K9</div>
+                                                <div class="basket-product__code">WS-C3850-12S-S Catalyst 3850 Switch</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-list-col basket-list-price">
+                                        <div class="basket-price-old">G:<span>$4,766.73</span></div>
+                                        <div class="basket-price-sale">S:<span>$2,306.72</span></div>
+                                        <div class="basket-price-discount">
+                                            <span>Вы экономите:</span>
+                                            <div class="basket-price-discount__num">$2,460.01</div>
+                                            <div class="basket-price-discount__mess">(67% скидка)</div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-list-col basket-list-quantity">
+                                        <div class="c-counter">
+                                            <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                            <button type="button" class="but c-counter__btn dec"><span></span></button>
+                                            <button type="button" class="but c-counter__btn inc"><span></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="basket-list-col basket-list-total">
+                                        <div class="basket-list-total__price">$2,306.72</div>
+                                    </div>
+                                    <div class="basket-list-col basket-list-del">
+                                        <a href="#" class="basket-list-del__btn">
+                                            <svg class="icon-basket-del"><use xlink:href="./img/main.svg#icon-basket-del"/></svg>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <!--END basket-list__item-->
+                                <!--START basket-list__item-->
+                                <div class="basket-list__item">
+                                    <div class="basket-list-col basket-list-product">
+                                        <div class="basket-product">
+                                            <div class="basket-product__img">
+                                                <img src="./img/basket-img-1.jpg" alt="">
+                                            </div>
+                                            <div class="basket-product__body">
+                                                <div class="basket-product__title">Маршрутизатор Cisco ISR4331-SEC/K9</div>
+                                                <div class="basket-product__code">WS-C3850-12S-S Catalyst 3850 Switch</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-list-col basket-list-price">
+                                        <div class="basket-price-old">G:<span>$4,766.73</span></div>
+                                        <div class="basket-price-sale">S:<span>$2,306.72</span></div>
+                                        <div class="basket-price-discount">
+                                            <span>Вы экономите:</span>
+                                            <div class="basket-price-discount__num">$2,460.01</div>
+                                            <div class="basket-price-discount__mess">(67% скидка)</div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-list-col basket-list-quantity">
+                                        <div class="c-counter">
+                                            <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                            <button type="button" class="but c-counter__btn dec"><span></span></button>
+                                            <button type="button" class="but c-counter__btn inc"><span></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="basket-list-col basket-list-total">
+                                        <div class="basket-list-total__price">$2,306.72</div>
+                                    </div>
+                                    <div class="basket-list-col basket-list-del">
+                                        <a href="#" class="basket-list-del__btn">
+                                            <svg class="icon-basket-del"><use xlink:href="./img/main.svg#icon-basket-del"/></svg>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <!--END basket-list__item-->
+                                <!--START basket-list__item-->
+                                <div class="basket-list__item">
+                                    <div class="basket-list-col basket-list-product">
+                                        <div class="basket-product">
+                                            <div class="basket-product__img">
+                                                <img src="./img/basket-img-1.jpg" alt="">
+                                            </div>
+                                            <div class="basket-product__body">
+                                                <div class="basket-product__title">Маршрутизатор Cisco ISR4331-SEC/K9</div>
+                                                <div class="basket-product__code">WS-C3850-12S-S Catalyst 3850 Switch</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-list-col basket-list-price">
+                                        <div class="basket-price-old">G:<span>$4,766.73</span></div>
+                                        <div class="basket-price-sale">S:<span>$2,306.72</span></div>
+                                        <div class="basket-price-discount">
+                                            <span>Вы экономите:</span>
+                                            <div class="basket-price-discount__num">$2,460.01</div>
+                                            <div class="basket-price-discount__mess">(67% скидка)</div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-list-col basket-list-quantity">
+                                        <div class="c-counter">
+                                            <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                            <button type="button" class="but c-counter__btn dec"><span></span></button>
+                                            <button type="button" class="but c-counter__btn inc"><span></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="basket-list-col basket-list-total">
+                                        <div class="basket-list-total__price">$2,306.72</div>
+                                    </div>
+                                    <div class="basket-list-col basket-list-del">
+                                        <a href="#" class="basket-list-del__btn">
+                                            <svg class="icon-basket-del"><use xlink:href="./img/main.svg#icon-basket-del"/></svg>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <!--END basket-list__item-->
+
+                            </div>
                         </div>
-                    </div>
-                    <div class="basket-list-body">
-                        <div class="basket-list__item">
-                            <div class="basket-list-col basket-list-product">
-                                <div class="basket-product">
-                                    <div class="basket-product__img"></div>
-                                    <div class="basket-product__body">
-                                        <div class="basket-product__title">Маршрутизатор Cisco ISR4331-SEC/K9</div>
-                                        <div class="basket-product__code">WS-C3850-12S-S Catalyst 3850 Switch</div>
+                        <div class="basket-box basket-address">
+                            <div class="basket-box__title">Укажите адрес доставки:</div>
+                            <div class="basket-address-list">
+                                <div class="basket-address-list__item">
+                                    <div class="basket-address-card">
+                                        <div class="basket-address-card__input">
+                                            <input type="text" class="c-input">
+                                        </div>
+                                        <a href="#" class="basket-address-card__add">+ добавить адрес</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="basket-list-col basket-list-price">
-                                <div class="basket-price-old">G:<span>$4,766.73</span></div>
-                                <div class="basket-price-sale">S:<span>$2,306.72</span></div>
-                                <div class="basket-price-discount">
-                                    <span>Вы экономите:</span>
-                                    <div class="basket-price-discount__num">$2,460.01</div>
-                                    <div class="basket-price-discount__mess">(67% скидка)</div>
+
+                        </div>
+                        <div class="basket-box basket-delivery">
+                            <div class="basket-box__title">Способ доставки:</div>
+                            <div class="basket-delivery-type">
+                                <div class="basket-delivery-type__item">
+                                    <div class="c-radio">
+                                        <input class="c-radio-input" type="radio" name="delivery-type" id="delivery-type-1" checked>
+                                        <label class="c-radio-label" for="delivery-type-1">Курьером</label>
+                                    </div>
+                                </div>
+                                <div class="basket-delivery-type__item">
+                                    <div class="c-radio">
+                                        <input class="c-radio-input" type="radio" name="delivery-type" id="delivery-type-2">
+                                        <label class="c-radio-label" for="delivery-type-2">Самовывоз из пункта выдачи</label>
+                                    </div>
+                                </div>
+                                <div class="basket-delivery-type__item">
+                                    <div class="c-radio">
+                                        <input class="c-radio-input" type="radio" name="delivery-type" id="delivery-type-3">
+                                        <label class="c-radio-label" for="delivery-type-3">СДЭК</label>
+                                    </div>
+                                </div>
+                                <div class="basket-delivery-type__item">
+                                    <div class="c-radio">
+                                        <input class="c-radio-input" type="radio" name="delivery-type" id="delivery-type-4">
+                                        <label class="c-radio-label" for="delivery-type-4">Деловые линии</label>
+                                    </div>
+                                </div>
+                                <div class="basket-delivery-type__item">
+                                    <div class="c-radio">
+                                        <input class="c-radio-input" type="radio" name="delivery-type" id="delivery-type-5">
+                                        <label class="c-radio-label" for="delivery-type-5">Другая компания</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="basket-list-col basket-list-quantity">
-                                <div class="c-counter">
-                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                    <button type="button" class="but c-counter__btn dec"><span></span></button>
-                                    <button type="button" class="but c-counter__btn inc"><span></span></button>
+
+                        </div>
+                        <div class="basket-box basket-delivery-pay">
+                            <div class="basket-box__title">Предварительная стоимость доставки:</div>
+                            <div class="basket-delivery-pay__num">2 300 руб.</div>
+
+                        </div>
+                    </div>
+                    <div class="basket-col">
+                        <div class="basket-operation">
+                            <div class="basket-operation__body">
+                                <div class="basket-operation__title">Сумма заказа</div>
+                                <div class="basket-operation-list">
+                                    <div class="basket-operation-line">
+                                        <div class="basket-operation-line__col">
+                                            <div class="basket-operation-line__text">Цена без учета скидки:</div>
+                                            <div class="basket-operation-line__price">$13,766.73</div>
+                                        </div>
+                                        <div class="basket-operation-line__col">
+                                            <div class="basket-operation-line__text">Вы сэкономили:</div>
+                                            <div class="basket-operation-line__price">$4,726.03</div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="basket-operation-total">
+                                    <div class="basket-operation-total__name">Итого:</div>
+                                    <div class="basket-operation-total__sum">$9,245,35</div>
+                                </div>
+                                <div class="basket-operation-sale">
+                                    <div class="c-checkbox">
+                                        <input class="c-checkbox-input" type="checkbox" name="availability" id="item_availability">
+                                        <label class="c-checkbox-label" for="item_availability">Запросить дополнительную скидку<span></span></label>
+                                    </div>
+                                </div>
+                                <div class="basket-operation-btn">
+                                    <a href="#" class="c-btn c-btn--big">Оформить заказ</a>
+                                </div>
+
                             </div>
-                            <div class="basket-list-col basket-list-total">
-                                <div class="basket-list-total__price">$2,306.72</div>
-                            </div>
-                            <div class="basket-list-col basket-list-del">
-                                <a herf="#" class="basket-list-del__btn">
-                                    <svg class="icon-basket-del"><use xlink:href="./img/main.svg#icon-basket-del"/></svg>
-                                </a>
+                            <div class="basket-operation__footer">
+                                <div class="basket-operation-phone">
+                                    Заказ можно оформить по телефону:
+                                    <a href="tel:+74997045686">+7(499) 704-56-86</a>
+                                    или обратившись к онлайн-консультанту.
+                                </div>
 
                             </div>
                         </div>
-
                     </div>
                 </div>
+
+
+
             </div>
 
         </div>
