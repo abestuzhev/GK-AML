@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>gk-aml</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
@@ -21,6 +22,35 @@
                 <!--<div class="header-operation-layout">-->
                 <div class="header-operation">
                     <div class="header-operation-left">
+                        <div class="header-menu-mobile">
+                                <span class="header-catalog-icon">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            <div class="menu-mobile">
+                                <div class="menu-mobile-box">
+                                    <a href="#" class="menu-mobile__link">Каталог товаров</a>
+                                </div>
+                                <div class="menu-mobile-box">
+                                    <a href="#" class="menu-mobile__link">О компании</a>
+                                    <a href="#" class="menu-mobile__link">Доставка и гарантия</a>
+                                    <a href="#" class="menu-mobile__link">Как сделать заказ</a>
+                                    <a href="#" class="menu-mobile__link">Контакты</a>
+                                </div>
+                                <div class="menu-mobile-box">
+                                    <a href="#" class="menu-mobile__link">Личный кабинет</a>
+                                </div>
+                                <div class="menu-mobile-box">
+                                    <a href="#" class="menu-mobile__link">
+                                        <div class="header-basket__name">Корзина
+                                            <span class="header-basket__count"><span>5</span></span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
                         <div class="header-catalog">
                             <a href="#" class="header-catalog__link">
                                     <span class="header-catalog-icon">
@@ -276,6 +306,11 @@
                         </div>
                     </div>
                     <div class="header-operation-right">
+                        <div class="header-search-mobile">
+                            <a href="#">
+                                <svg class="icon-search"><use xlink:href="./img/main.svg#icon-search"/></svg>
+                            </a>
+                        </div>
                         <div class="header-phone">
                             <a href="tel:74997045686" class="header-phone__link">
                                 <svg class="icon-phone"><use xlink:href="./img/main.svg#icon-phone"/></svg>
@@ -285,7 +320,7 @@
                         <div class="header-auth">
                             <a href="#" class="header-auth__link">
                                 <svg class="icon-user"><use xlink:href="./img/main.svg#icon-user"/></svg>
-                                Войти
+                                <span>Войти</span>
                             </a>
                         </div>
                         <div class="header-basket">
@@ -886,8 +921,9 @@
             </div>
 
         </div>
-
-
+    </div>
+    <div class="footer-bottom-mobile">
+        <a class="footer-bottom__dev" href="#">Site by Leeft</a>
     </div>
 </footer>
 
