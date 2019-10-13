@@ -458,165 +458,462 @@
                         <span class="breadcrumb-no-link"><span>Каталог</span></span>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="#" class="breadcrumb-link"><span>Сетевые продукты Cisco</span></a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#" class="breadcrumb-link"><span>Маршрутизаторы Сisco</span></a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#" class="breadcrumb-link"><span>Маршрутизаторы Сisco ISR 4000</span></a>
+                        <a href="#" class="breadcrumb-link"><span>Личный кабинет</span></a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="layout">
-            <div class="search">
-                <h1 class="main-title">Поиск</h1>
-                <div class="search-area">
-                    <div class="header-search">
-                        <svg class="icon-search"><use xlink:href="./img/main.svg#icon-search"></use></svg>
-                        <input type="text" name="header-search" id="search-page" class="header-search-input" placeholder="Поиск по каталогу">
+            <div class="profile">
+                <h1 class="main-title">Личный кабинет</h1>
+                <form action="" method="POST">
+                    <div class="profile-body">
+                        <a href="#" class="profile-exit">
+                            <svg class="icon-door"><use xlink:href="./img/main.svg#icon-door"/></svg>
+                            <span>Выйти</span>
+                        </a>
+                        <div class="c-tabs">
+                            <ul class="c-tabs-menu">
+                                <li class="c-tabs-menu__item current"><a href="#profile-card-1">Общая информация</a></li>
+                                <li class="c-tabs-menu__item"><a href="#profile-card-2">адрес доставки</a></li>
+                                <li class="c-tabs-menu__item"><a href="#profile-card-3">история коммерческих предложений</a></li>
+                            </ul>
+                            <div class="c-tabs-body">
+                                <div id="profile-card-1" class="tab-content">
 
-                        <div class="popup-search">
-                            <div class="popup-search__head">Предлагаемые результаты</div>
-                            <div class="popup-search__body">
-                                <ul class="popup-search-list">
-                                    <li class="popup-search-list__item">
-                                        <a href="#" class="popup-search-card">
-                                            <span class="popup-search-card__title">cusco air ap4800</span>
-                                            <span class="popup-search-card__count">1202</span>
-                                        </a>
-                                    </li>
-                                    <li class="popup-search-list__item">
-                                        <a href="#" class="popup-search-card">
-                                            <span class="popup-search-card__title">cusco 4300</span>
-                                            <span class="popup-search-card__count">12</span>
-                                        </a>
-                                    </li>
-                                    <li class="popup-search-list__item">
-                                        <a href="#" class="popup-search-card">
-                                            <span class="popup-search-card__title">cusco 3400 router</span>
-                                            <span class="popup-search-card__count">5</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                                    <div class="profile-box">
+                                        <div class="profile-box__title">Полное наименование</div>
+                                        <div class="profile-box__body">
+                                            <ul class="profile-box-list">
+                                                <!--START profile-box-list__item-->
+                                                <li class="profile-box-list__item">
+                                                    <div class="profile-field">
+                                                        <label class="profile-label">
+                                                            <span>Полное наименование:</span>
+                                                            <input type="text" class="profile-input">
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!--END profile-box-list__item-->
+                                            </ul>
+                                        </div>
+                                    </div>
 
+                                    <div class="profile-grid">
+                                        <div class="profile-col">
+                                            <div class="profile-box">
+                                                <div class="profile-box__title">Информация об учетной записи:</div>
+                                                <div class="profile-box__body">
+                                                    <ul class="profile-box-list">
+                                                        <!--START profile-box-list__item-->
+                                                        <li class="profile-box-list__item">
+                                                            <div class="profile-field">
+                                                                <label class="profile-label">
+                                                                    <span>Юридический адрес:</span>
+                                                                    <input type="text" class="profile-input">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <!--END profile-box-list__item-->
+                                                        <!--START profile-box-list__item-->
+                                                        <li class="profile-box-list__item">
+                                                            <div class="profile-field">
+                                                                <label class="profile-label">
+                                                                    <span>ИНН:</span>
+                                                                    <input type="text" class="profile-input">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <!--END profile-box-list__item-->
+                                                        <!--START profile-box-list__item-->
+                                                        <li class="profile-box-list__item">
+                                                            <div class="profile-field">
+                                                                <label class="profile-label">
+                                                                    <span>БИК:</span>
+                                                                    <input type="text" class="profile-input">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <!--END profile-box-list__item-->
+                                                        <!--START profile-box-list__item-->
+                                                        <li class="profile-box-list__item">
+                                                            <div class="profile-field">
+                                                                <label class="profile-label">
+                                                                    <span>Расчетный счет:</span>
+                                                                    <input type="text" class="profile-input">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <!--END profile-box-list__item-->
+                                                        <!--START profile-box-list__item-->
+                                                        <li class="profile-box-list__item">
+                                                            <div class="profile-field">
+                                                                <label class="profile-label">
+                                                                    <span>Адрес электронной почты:</span>
+                                                                    <input type="text" class="profile-input">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <!--END profile-box-list__item-->
+                                                        <!--START profile-box-list__item-->
+                                                        <li class="profile-box-list__item">
+                                                            <div class="profile-field">
+                                                                <label class="profile-label">
+                                                                    <span>Телефон:</span>
+                                                                    <input type="text" class="profile-input">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <!--END profile-box-list__item-->
+                                                        <!--START profile-box-list__item-->
+                                                        <li class="profile-box-list__item">
+                                                            <div class="profile-field">
+                                                                <label class="profile-label">
+                                                                    <span>Мобильный телефон:</span>
+                                                                    <input type="text" class="profile-input">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <!--END profile-box-list__item-->
+                                                        <!--START profile-box-list__item-->
+                                                        <li class="profile-box-list__item">
+                                                            <div class="profile-field">
+                                                                <label class="profile-label">
+                                                                    <span>Контактное лицо (Ф.И.О.):</span>
+                                                                    <input type="text" class="profile-input">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <!--END profile-box-list__item-->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-col">
+                                            <div class="profile-box">
+                                                <div class="profile-box__title">Изменить пароль:</div>
+                                                <div class="profile-box__body">
+                                                    <ul class="profile-box-list">
+                                                        <!--START profile-box-list__item-->
+                                                        <li class="profile-box-list__item">
+                                                            <div class="profile-field">
+                                                                <label class="profile-label">
+                                                                    <span>Новый пароль:</span>
+                                                                    <input type="text" class="profile-input">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <!--END profile-box-list__item-->
+                                                        <!--START profile-box-list__item-->
+                                                        <li class="profile-box-list__item">
+                                                            <div class="profile-field">
+                                                                <label class="profile-label">
+                                                                    <span>Подтвердить пароль:</span>
+                                                                    <input type="text" class="profile-input">
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <!--END profile-box-list__item-->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-footer">
+                                        <div class="profile-footer__btn">
+                                            <button class="c-btn c-btn--big">Сохранить новые данные</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="profile-card-2" class="tab-content">
+                                    <div class="profile-delivery">
+                                        <div class="profile-table">
+                                            <div class="profile-table-head">
+                                                <div class="profile-table-row">
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-table-head__title">Адрес</div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-table-head__title">Способ доставки</div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-table-head__title">Основной</div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-table-head__title">Изменить</div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-table-head__title">Удалить</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-table-body">
+                                                <!--START profile-table-row-->
+                                                <div class="profile-table-row">
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-delivery-address">
+                                                            <span>1.</span> Москва, 125894, пр.Мира 4, 1/2/54, 2э
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        СДЭК
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="c-radio">
+                                                            <input class="c-radio-input" type="radio" name="profile-delivery" id="profile-delivery-1" checked="">
+                                                            <label class="c-radio-label" for="profile-delivery-1"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <a href="#" class="profile-table-icon">
+                                                            <svg class="icon-edit"><use xlink:href="./img/main.svg#icon-edit"/></svg>
+                                                        </a>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <a href="#" class="profile-table-icon">
+                                                            <svg class="icon-basket-del"><use xlink:href="./img/main.svg#icon-basket-del"/></svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!--END profile-table-row-->
+                                                <!--START profile-table-row-->
+                                                <div class="profile-table-row">
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-delivery-address">
+                                                            <span>1.</span> Москва, 125894, пр.Мира 4, 1/2/85, 6э
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        Курьером
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="c-radio">
+                                                            <input class="c-radio-input" type="radio" name="profile-delivery" id="profile-delivery-2" >
+                                                            <label class="c-radio-label" for="profile-delivery-2"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <a href="#" class="profile-table-icon">
+                                                            <svg class="icon-edit"><use xlink:href="./img/main.svg#icon-edit"/></svg>
+                                                        </a>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <a href="#" class="profile-table-icon">
+                                                            <svg class="icon-basket-del"><use xlink:href="./img/main.svg#icon-basket-del"/></svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!--END profile-table-row-->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-box">
+                                        <div class="profile-box__title">Новый адрес:</div>
+                                        <div class="profile-box__body">
+                                            <ul class="profile-box-list">
+                                                <!--START profile-box-list__item-->
+                                                <li class="profile-box-list__item">
+                                                    <div class="profile-field">
+                                                        <label class="profile-label">
+                                                            <span>Город:</span>
+                                                            <input type="text" class="profile-input">
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!--END profile-box-list__item-->
+                                                <!--START profile-box-list__item-->
+                                                <li class="profile-box-list__item">
+                                                    <div class="profile-field">
+                                                        <label class="profile-label">
+                                                            <span>Улица:</span>
+                                                            <input type="text" class="profile-input">
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!--END profile-box-list__item-->
+                                                <!--START profile-box-list__item-->
+                                                <li class="profile-box-list__item">
+                                                    <div class="profile-field">
+                                                        <label class="profile-label">
+                                                            <span>Дом:</span>
+                                                            <input type="text" class="profile-input">
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!--END profile-box-list__item-->
+                                                <!--START profile-box-list__item-->
+                                                <li class="profile-box-list__item">
+                                                    <div class="profile-field">
+                                                        <label class="profile-label">
+                                                            <span>Корпус/Строение/Квартира:</span>
+                                                            <input type="text" class="profile-input">
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!--END profile-box-list__item-->
+                                                <!--START profile-box-list__item-->
+                                                <li class="profile-box-list__item">
+                                                    <div class="profile-field">
+                                                        <label class="profile-label">
+                                                            <span>Этаж:</span>
+                                                            <input type="text" class="profile-input">
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!--END profile-box-list__item-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="profile-box">
+                                        <div class="profile-box__title">Способ доставки:</div>
+                                        <div class="profile-box__body">
+                                            <div class="profile-box-list">
+                                                <!--START profile-box-list__item-->
+                                                <li class="profile-box-list__item">
+                                                    <div class="basket-delivery-type">
+                                                        <div class="basket-delivery-type__item">
+                                                            <div class="c-radio">
+                                                                <input class="c-radio-input" type="radio" name="delivery-type" id="delivery-type-1" checked="">
+                                                                <label class="c-radio-label" for="delivery-type-1">Курьером</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="basket-delivery-type__item">
+                                                            <div class="c-radio">
+                                                                <input class="c-radio-input" type="radio" name="delivery-type" id="delivery-type-2">
+                                                                <label class="c-radio-label" for="delivery-type-2">Самовывоз из пункта выдачи</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="basket-delivery-type__item">
+                                                            <div class="c-radio">
+                                                                <input class="c-radio-input" type="radio" name="delivery-type" id="delivery-type-3">
+                                                                <label class="c-radio-label" for="delivery-type-3">СДЭК</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="basket-delivery-type__item">
+                                                            <div class="c-radio">
+                                                                <input class="c-radio-input" type="radio" name="delivery-type" id="delivery-type-4">
+                                                                <label class="c-radio-label" for="delivery-type-4">Деловые линии</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="basket-delivery-type__item">
+                                                            <div class="c-radio">
+                                                                <input class="c-radio-input" type="radio" name="delivery-type" id="delivery-type-5">
+                                                                <label class="c-radio-label" for="delivery-type-5">Другая компания</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!--END profile-box-list__item-->
+                                                <!--START profile-box-list__item-->
+                                                <li class="profile-box-list__item">
+                                                    <div class="profile-field">
+                                                        <label class="profile-label">
+                                                            <span>Транспортная компания:</span>
+                                                            <input type="text" class="profile-input">
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <!--END profile-box-list__item-->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-box">
+                                        <div class="profile-box__title">Предварительная стоимость доставки:</div>
+                                        <div class="profile-box__body">
+                                            <div class="profile-box-preliminary">2300 руб.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-footer">
+                                        <div class="profile-footer__btn">
+                                            <button class="c-btn c-btn--big">Сохранить новые данные</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div id="profile-card-3" class="tab-content">
+                                    <div class="profile-history">
+                                        <div class="profile-table">
+                                            <div class="profile-table-head">
+                                                <div class="profile-table-row">
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-table-head__title">Номер КП</div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-table-head__title">Содержание заказа</div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-table-head__title">Цена за 1 ед.</div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-table-head__title">Скидка</div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-table-head__title">Итого</div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-table-head__title">Скачать КП</div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-table-head__title">Удалить</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile-table-body">
+                                                <!--START profile-table-row-->
+                                                <div class="profile-table-row">
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-history-number">
+                                                            <span># 751</span> от 15.08.19
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-history-product">
+                                                            <span>1.</span> Маршрутизатор Cisco WS-C3850-12S-S
+                                                            <span class="profile-history-product__code">WS-C3850-12S-S Catalyst 3850 Switch</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-history-quantity">
+                                                            <span>1 х </span>$996.19
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        -
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        $3,304.87
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <div class="profile-history-kp">
+                                                            <svg class="icon-exel"><use xlink:href="./img/main.svg#icon-exel"/></svg>
+                                                            <a href="#">скачать xls, 312 Кб</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-table-col">
+                                                        <a href="#" class="profile-table-icon">
+                                                            <svg class="icon-basket-del"><use xlink:href="./img/main.svg#icon-basket-del"/></svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!--END profile-table-row-->
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="search-list">
-                    <div class="search-list-head">
-                        <div class="search-card">
-                            <div class="search-list-head__item search-card-vendor">Vendor</div>
-                            <div class="search-list-head__item search-card-pn">P/N</div>
-                            <div class="search-list-head__item search-card-product">Товар</div>
-                            <div class="search-list-head__item search-card-contract">Сервисный контракт</div>
-                            <div class="search-list-head__item search-card-sale">Цена со скидкой</div>
-                            <div class="search-list-head__item search-card-price">Цена</div>
-                            <div class="search-list-head__item search-card-discount">Скидка</div>
-                            <div class="search-list-head__item search-card-quantity">Кол-во</div>
-                            <div class="search-list-head__item search-card-btn"></div>
-                        </div>
-                    </div>
-                    <div class="search-list__body">
-                        <!--START search-list__item-->
-                        <div class="search-list__item">
-                            <div class="search-card">
-                                <div class="search-card-vendor">cisco</div>
-                                <div class="search-card-pn">
-                                    <div class="search-card-code">CISCO3945E/K9</div>
-                                    <div class="search-card-year">2018</div>
-                                </div>
-                                <div class="search-card-product">Маршрутизатор Cisco ISR4331/K9</div>
-                                <div class="search-card-contract">
-                                    <a href="#" class="search-card-contract__link">SMARTnet</a>
-                                </div>
-                                <div class="search-card-sale">S: <span>$2,306.72</span></div>
-                                <div class="search-card-price">G: <span>$4,766.73</span></div>
-                                <div class="search-card-discount">76%</div>
-                                <div class="search-card-quantity">
-                                    <div class="c-counter">
-                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                        <button type="button" class="but c-counter__btn dec"><span></span></button>
-                                        <button type="button" class="but c-counter__btn inc"><span></span></button>
-                                    </div>
-                                </div>
-                                <div class="search-card-btn">
-                                    <a href="#" class="catalog-card__btn">
-                                        <svg class="icon-truck"><use xlink:href="./img/main.svg#icon-truck"/></svg>
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--END search-list__item-->
-                        <!--START search-list__item-->
-                        <div class="search-list__item">
-                            <div class="search-card">
-                                <div class="search-card-vendor">cisco</div>
-                                <div class="search-card-pn">
-                                    <div class="search-card-code">CISCO3945E/K9</div>
-                                    <div class="search-card-year">2018</div>
-                                </div>
-                                <div class="search-card-product">Маршрутизатор Cisco ISR4331/K9? Cisco ISR4331/K9 kdfhksdf sdf s </div>
-                                <div class="search-card-contract">
-                                    <a href="#" class="search-card-contract__link">SMARTnet</a>
-                                </div>
-                                <div class="search-card-sale">S: <span>$2,306.72</span></div>
-                                <div class="search-card-price">G: <span>$4,766.73</span></div>
-                                <div class="search-card-discount">76%</div>
-                                <div class="search-card-quantity">
-                                    <div class="c-counter">
-                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                        <button type="button" class="but c-counter__btn dec"><span></span></button>
-                                        <button type="button" class="but c-counter__btn inc"><span></span></button>
-                                    </div>
-                                </div>
-                                <div class="search-card-btn">
-                                    <a href="#" class="catalog-card__btn">
-                                        <svg class="icon-truck"><use xlink:href="./img/main.svg#icon-truck"/></svg>
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--END search-list__item-->
-                        <!--START search-list__item-->
-                        <div class="search-list__item">
-                            <div class="search-card">
-                                <div class="search-card-vendor">cisco</div>
-                                <div class="search-card-pn">
-                                    <div class="search-card-code">CISCO3945E/K9</div>
-                                    <div class="search-card-year">2018</div>
-                                </div>
-                                <div class="search-card-product">Маршрутизатор Cisco ISR4331/K9</div>
-                                <div class="search-card-contract">
-                                    <a href="#" class="search-card-contract__link">SMARTnet</a>
-                                </div>
-                                <div class="search-card-sale">S: <span>$2,306.72</span></div>
-                                <div class="search-card-price">G: <span>$4,766.73</span></div>
-                                <div class="search-card-discount">76%</div>
-                                <div class="search-card-quantity">
-                                    <div class="c-counter">
-                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                        <button type="button" class="but c-counter__btn dec"><span></span></button>
-                                        <button type="button" class="but c-counter__btn inc"><span></span></button>
-                                    </div>
-                                </div>
-                                <div class="search-card-btn">
-                                    <a href="#" class="catalog-card__btn">
-                                        <svg class="icon-truck"><use xlink:href="./img/main.svg#icon-truck"/></svg>
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--END search-list__item-->
-                    </div>
-
-                </div>
+                </form>
             </div>
+
         </div>
     </main>
     <footer class="footer">

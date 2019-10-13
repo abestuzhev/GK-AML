@@ -58,10 +58,17 @@ body, html {
     outline: none;
     background-color: #fff;
     border-radius: 4px;
-    padding: 6px 10px;
+    padding: 10px 10px;
     color: #5d5d5d;
     width: 100%;
+    font-size: 14px;
 }
+
+input.c-input::-moz-placeholder {color: #5d5d5d;}
+input.c-input::-webkit-input-placeholder { color: #5d5d5d; }
+input.c-input:-ms-input-placeholder { color: #5d5d5d; }
+input.c-input::-ms-input-placeholder { color: #5d5d5d; }
+input.c-input::placeholder { color: #5d5d5d; }
 
 .c-social {
     display: flex;
@@ -253,9 +260,9 @@ body, html {
         content: '';
         position: absolute;
         left: 0;
-        right: -3px;
-        width: 19px;
-        height: 19px;
+        top: -2px;
+        width: 18px;
+        height: 18px;
         box-shadow: inset 0px 0px 0px 1px #dcdee3;
         border-radius: 150px;
         transition: all .1s ease-in-out;
@@ -484,6 +491,7 @@ body, html {
     text-decoration: none;
     transition: all .1s ease-in-out;
     text-align: center;
+    cursor: pointer;
 
     &:hover {
         border-color: #ef6314;
@@ -498,3 +506,54 @@ body, html {
     }
 }
 
+.c-textarea {
+    border: 1px solid #e5e5e5;
+    outline: none;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: #5d5d5d;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.c-form {
+    &-line {
+        margin-bottom: 12px;
+    }
+
+    &-grid {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    &-col {
+        margin-right: 6px;
+
+        &--6 {
+            width: 50%;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &-text {
+        color: #a6a6a6;
+        font-style: italic;
+        margin-bottom: 6px;
+    }
+
+    .c-checkbox-label {
+        color: #30353d;
+
+        a {
+            text-decoration: none;
+            color: #188cca;
+        }
+    }
+}
