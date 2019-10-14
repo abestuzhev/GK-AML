@@ -3943,7 +3943,16 @@ input.c-input::placeholder {
   .search-card-quantity {
     width: 14%; }
   .search-card-btn {
-    width: 10%; } }
+    width: 10%; }
+  .search-area .header-search {
+    display: block;
+    position: relative;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    opacity: 1;
+    visibility: visible; } }
 
 @media (max-width: 680px) {
   .advantages-card__icon {
@@ -3963,7 +3972,18 @@ input.c-input::placeholder {
     width: 55%;
     text-align: left; }
   .search-card-pn {
-    width: 35%; } }
+    width: 35%; }
+  .search-card-sale {
+    width: 24%; }
+  .search-card-price {
+    width: 24%; }
+  .search-card-discount {
+    width: 14%; }
+  .search-card-quantity {
+    width: 20%; }
+  .search-card-btn {
+    width: 16%;
+    text-align: right; } }
 
 @media (max-width: 550px) {
   .slider-category-card {
@@ -4068,3 +4088,17 @@ input.c-input::placeholder {
             flex: 1; }
   .about .advantages-list__item {
     width: 100%; } }
+
+@media (max-width: 400px) {
+  .search-card-quantity {
+    width: 77%;
+    text-align: right;
+    margin-top: 10px; }
+  .search-card-btn {
+    width: 60px;
+    margin-top: 10px; }
+  .search-card-pn {
+    width: 42%; }
+  .search-card-sale {
+    width: 43%;
+    text-align: left; } }
