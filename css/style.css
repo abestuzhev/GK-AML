@@ -152,7 +152,7 @@ div {
   fill: #b5b5b5;
   font-size: 238px;
   width: 1em;
-  height: .15em; }
+  height: .17em; }
 
 .icon-phone {
   display: inline-block;
@@ -515,7 +515,8 @@ input.c-input::placeholder {
   cursor: pointer;
   -webkit-transition: all .1s ease-in-out;
   -o-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out; }
+  transition: all .1s ease-in-out;
+  display: block; }
   .c-checkbox-label span {
     display: inline-block; }
   .c-checkbox-label::before {
@@ -2417,7 +2418,8 @@ input.c-input::placeholder {
       text-decoration: none;
       -webkit-transition: all .1s ease-in-out;
       -o-transition: all .1s ease-in-out;
-      transition: all .1s ease-in-out; }
+      transition: all .1s ease-in-out;
+      white-space: nowrap; }
       .catalog-card__btn svg {
         margin-right: 7px;
         fill: #188cca;
@@ -3674,6 +3676,11 @@ input.c-input::placeholder {
 
 .contact-map {
   height: 100%; }
+  .contact-map-mobile {
+    display: none;
+    width: 100%;
+    height: 325px;
+    overflow: hidden; }
 
 #profile-card-2 .profile-field {
   max-width: 50%; }
@@ -3702,7 +3709,20 @@ input.c-input::placeholder {
     width: 100%;
     padding: 0 5px; }
   .popular-category > .popular-category-grid__line > .popular-category-grid__col.col-6 {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .contact-grid {
+    margin-left: -15px;
+    margin-right: -15px; }
+  .contact-col {
+    padding: 0 15px; } }
+
+@media (max-width: 1270px) {
+  .catalog-list[data-display="tile"] {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .catalog-list[data-display="tile"] .catalog-list__item {
+    width: 33.333%; } }
 
 @media (max-width: 1230px) {
   .search-card-discount {
@@ -3784,6 +3804,24 @@ input.c-input::placeholder {
     width: 48%;
     margin: 0 !important; }
   .search-list-head {
+    display: none; }
+  .contact-grid {
+    display: block; }
+  .contact-col {
+    width: 100%; }
+  .contact-map {
+    display: none; }
+  .contact-map-mobile {
+    display: block;
+    margin-bottom: 10px; }
+  .contact-grid {
+    margin-left: 0;
+    margin-right: 0; }
+  .contact-col {
+    padding: 0; }
+  .catalog-col__left {
+    padding: 0; }
+  .filter {
     display: none; } }
 
 @media (max-width: 790px) {
@@ -4021,7 +4059,9 @@ input.c-input::placeholder {
     text-align: right;
     -webkit-box-align: end;
         -ms-flex-align: end;
-            align-items: flex-end; } }
+            align-items: flex-end; }
+  .catalog-list[data-display="tile"] .catalog-list__item {
+    width: 50%; } }
 
 @media (max-width: 680px) {
   .advantages-card__icon {
@@ -4034,7 +4074,13 @@ input.c-input::placeholder {
   .about-text {
     max-width: 100%; }
   .about-list__item {
-    width: 100%; } }
+    width: 100%; }
+  .c-title span {
+    margin-right: 0; }
+  .c-title-more {
+    margin: 8px 0 0; }
+  .c-title__del {
+    display: none !important; } }
 
 @media (max-width: 580px) {
   .search-card-contract {
@@ -4052,7 +4098,9 @@ input.c-input::placeholder {
     width: 20%; }
   .search-card-btn {
     width: 16%;
-    text-align: right; } }
+    text-align: right; }
+  .catalog-list[data-display="tile"] .catalog-list__item {
+    width: 100%; } }
 
 @media (max-width: 550px) {
   .slider-category-card {
@@ -4125,8 +4173,8 @@ input.c-input::placeholder {
   .popular-category-grid__col {
     padding: 0 !important;
     margin-bottom: 10px;
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-left: -8px;
+    margin-right: -8px;
     width: auto !important; }
   .popular-category-card {
     height: 120px;
@@ -4164,7 +4212,15 @@ input.c-input::placeholder {
   .basket-operation__body {
     padding: 20px 23px; }
   .basket-operation-btn .c-btn {
-    width: 100%; } }
+    width: 100%; }
+  .contact-form .c-form-grid {
+    display: block; }
+  .contact-form .c-form-grid .c-form-col {
+    margin-bottom: 10px; }
+  .contact-form .c-form-col {
+    width: 100%; }
+  .c-checkbox-label span {
+    font-size: 14px; } }
 
 @media (max-width: 400px) {
   .search-card-quantity {
@@ -4178,4 +4234,6 @@ input.c-input::placeholder {
     width: 42%; }
   .search-card-sale {
     width: 43%;
-    text-align: left; } }
+    text-align: left; }
+  .header-logo .icon-logo {
+    font-size: 158px; } }

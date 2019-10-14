@@ -44,6 +44,25 @@
         margin-bottom: 10px;
 
     }
+
+    .contact-grid {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .contact-col {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 1270px) {
+
+    .catalog-list[data-display="tile"] {
+        justify-content: flex-start;
+    }
+    .catalog-list[data-display="tile"] .catalog-list__item {
+        width: 33.333%;
+    }
 }
 
 @media (max-width: 1230px) {
@@ -74,6 +93,8 @@
     .search-list-head .search-card{
         padding: 0;
     }
+
+
 }
 @media (max-width: 1150px) {
     .header-menu {
@@ -180,6 +201,40 @@
     }
 
     .search-list-head {
+        display: none;
+    }
+
+    .contact-grid {
+        display: block;
+    }
+
+    .contact-col {
+        width: 100%;
+    }
+
+    .contact-map {
+        display: none;
+    }
+
+    .contact-map-mobile {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .contact-grid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-col {
+        padding: 0;
+    }
+
+    .catalog-col__left {
+        padding: 0;
+    }
+
+    .filter {
         display: none;
     }
 }
@@ -499,6 +554,10 @@
         text-align: right;
         align-items: flex-end;
     }
+
+    .catalog-list[data-display="tile"] .catalog-list__item {
+        width: 50%;
+    }
 }
 
 @media (max-width: 680px) {
@@ -521,6 +580,18 @@
 
     .about-list__item {
         width: 100%;
+    }
+
+    .c-title span {
+        margin-right: 0;
+    }
+
+    .c-title-more {
+        margin: 8px 0 0;
+    }
+
+    .c-title__del {
+        display: none !important;
     }
 }
 
@@ -556,6 +627,10 @@
     .search-card-btn {
         width: 16%;
         text-align: right;
+    }
+
+    .catalog-list[data-display="tile"] .catalog-list__item {
+        width: 100%;
     }
 }
 @media (max-width: 550px) {
@@ -659,8 +734,8 @@
     .popular-category-grid__col {
         padding: 0 !important;
         margin-bottom: 10px;
-        margin-left: -16px;
-        margin-right: -16px;
+        margin-left: -8px;
+        margin-right: -8px;
         width: auto !important;
     }
 
@@ -705,6 +780,22 @@
     .basket-operation-btn .c-btn {
         width: 100%;
     }
+
+    .contact-form .c-form-grid {
+        display: block;
+    }
+    .contact-form .c-form-grid .c-form-col {
+        margin-bottom: 10px;
+    }
+    .contact-form .c-form-col {
+        width: 100%;
+    }
+
+    .c-checkbox-label span {
+        font-size: 14px;
+    }
+
+
 }
 
 @media (max-width: 400px) {
@@ -727,5 +818,9 @@
     .search-card-sale {
         width: 43%;
         text-align: left;
+    }
+
+    .header-logo .icon-logo {
+        font-size: 158px;
     }
 }

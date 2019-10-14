@@ -202,6 +202,7 @@ input.c-input::placeholder { color: #5d5d5d; }
     position: relative;
     cursor: pointer;
     transition: all .1s ease-in-out;
+    display: block;
 
     span {
         display: inline-block;
