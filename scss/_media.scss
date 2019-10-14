@@ -485,6 +485,20 @@
         right: 4px;
         top: 8px;
     }
+
+    .basket-list-quantity {
+        margin-top: 10px;
+        width: 50%;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .basket-list-total {
+        margin-top: 10px;
+        width: 50%;
+        text-align: right;
+        align-items: flex-end;
+    }
 }
 
 @media (max-width: 680px) {
@@ -673,6 +687,22 @@
     }
 
     .about .advantages-list__item {
+        width: 100%;
+    }
+
+    .basket-product {
+        display: block;
+    }
+
+    .basket-product__body {
+        margin-bottom: 10px;
+    }
+
+    .basket-operation__body {
+        padding: 20px 23px;
+    }
+
+    .basket-operation-btn .c-btn {
         width: 100%;
     }
 }
