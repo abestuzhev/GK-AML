@@ -2503,6 +2503,7 @@
             justify-content: flex-start;
             align-items: stretch;
             background-color: #fafafa;
+            border-bottom: 1px solid #e5e5e5;
 
             &__item {
                 border-right: 1px solid #e5e5e5;
@@ -2582,7 +2583,6 @@
         &-title {
             text-align: center;
             padding: 11px;
-            border-bottom: 1px solid #e5e5e5;
         }
     }
 
@@ -2671,7 +2671,7 @@
             align-items: center;
             &__item {
                 margin-right: 35px;
-                margin-bottom: 2px;
+                margin-bottom: 6px;
             }
         }
 

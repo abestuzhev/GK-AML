@@ -97,6 +97,37 @@
         margin-right: 15px;
     }
 
+    .basket-grid {
+        display: block;
+    }
+
+    .basket-col {
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+
+    .basket-operation-btn {
+        text-align: center;
+    }
+
+    .basket-operation-btn .c-btn {
+        width: auto;
+        display: inline-block;
+    }
+
+    .basket-list-title {
+        font-size: 14px;
+    }
+
+    .basket-operation-total {
+        margin-bottom: 10px;
+    }
+
+    .basket-list-col {
+        padding: 18px 16px;
+    }
+
 }
 
 @media (max-width: 1060px) {
@@ -403,8 +434,57 @@
         visibility: visible;
     }
 
+    .basket-list {
+        border: none;
+    }
 
+    .basket-list-head {
+        display: none;
+    }
 
+    .basket-list__item {
+        margin-bottom: 10px;
+        border: 1px solid #e5e5e5;
+        flex-flow: row wrap;
+        padding: 18px 16px;
+        position: relative;
+    }
+
+    .basket-list-col {
+        border: none;
+        padding: 0;
+    }
+
+    .basket-list-product {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .basket-price-sale {
+        margin-bottom: 4px;
+    }
+
+    .basket-list-price {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .basket-price-discount__mess,
+    .basket-price-discount__num {
+        display: inline-block;
+    }
+
+    .basket-list-del__btn {
+        cursor: pointer;
+        padding: 6px 10px;
+    }
+
+    .basket-list-del {
+        width: auto;
+        position: absolute;
+        right: 4px;
+        top: 8px;
+    }
 }
 
 @media (max-width: 680px) {
