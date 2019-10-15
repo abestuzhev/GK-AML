@@ -234,9 +234,52 @@
         padding: 0;
     }
 
+    .filter-layout {
+        //display: none;
+
+    }
+
     .filter {
+        right: -320px;
+        //width: 100%;
+        border-radius:0;
+        position: fixed;
+        top: 0;
+        //right: 0;
+        bottom: 0;
+        width: 320px;
+        z-index: 100;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 47px 0 80px;
+        transition: all .2s ease-in-out;
+
+    }
+
+    .filter-box {
+        padding: 15px 15px 10px;
+    }
+
+    .filter-mobile .catalog-sorting-availability,
+    .filter-item-title {
+        padding: 10px 17px;
+    }
+
+    .filter-mobile {
+        display: block;
+    }
+
+    .catalog {
+        display: block;
+    }
+
+    .catalog-body .catalog-sorting,
+    .catalog-body .catalog-model {
         display: none;
     }
+
+
+
 }
 
 @media (max-width: 790px) {
@@ -558,6 +601,7 @@
     .catalog-list[data-display="tile"] .catalog-list__item {
         width: 50%;
     }
+
 }
 
 @media (max-width: 680px) {
@@ -592,6 +636,10 @@
 
     .c-title__del {
         display: none !important;
+    }
+
+    .filter-mobile-btn {
+        padding: 10px 14px;
     }
 }
 
@@ -793,6 +841,10 @@
 
     .c-checkbox-label span {
         font-size: 14px;
+    }
+
+    .filter-mobile-footer .c-btn {
+        padding: 12px;
     }
 
 

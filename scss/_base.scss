@@ -36,6 +36,18 @@ body *, html * {
     box-sizing: border-box;
 }
 
+body {
+    min-width: 320px;
+}
+
+html.blocked, body.blocked {
+    overflow: hidden;
+    touch-action: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;

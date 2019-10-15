@@ -1,3 +1,7 @@
+var windowWidth = (window.innerWidth ); // вся ширина окна
+var documentWidth = (document.documentElement.clientWidth ); // ширина минус прокрутка
+
+
 $(window).on("load", function() {
     // $('.slider').fadeIn(3000);
 });
@@ -329,5 +333,32 @@ $(function () {
         e.preventDefault();
         $('.menu-mobile').toggleClass('is-show');
         $(this).toggleClass('active');
+    });
+
+    function determineScrollPanel(){
+        if(windowWidth > documentWidth){
+            $('.filter-mobile-footer').css({
+                'padding-right':'17px'
+            });
+        }
+    }
+    determineScrollPanel();
+
+    $(document).on('click', '.js-filter-mobile-btn', function(e){
+        e.preventDefault();
+        $('.filter').addClass('is-show');
+        $('body, html').addClass('blocked');
+        determineScrollPanel();
+
+    });
+
+    $(window).resize(function(){
+        determineScrollPanel();
+    });
+
+    $(document).on('click', '.filter-mobile-head__close', function(e){
+        e.preventDefault();
+        $('.filter').removeClass('is-show');
+        $('body, html').removeClass('blocked');
     });
 });

@@ -22,6 +22,35 @@
                 <!--<div class="header-operation-layout">-->
                 <div class="header-operation">
                     <div class="header-operation-left">
+                        <div class="header-menu-mobile">
+                                <span class="header-catalog-icon">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            <div class="menu-mobile">
+                                <div class="menu-mobile-box">
+                                    <a href="#" class="menu-mobile__link">Каталог товаров</a>
+                                </div>
+                                <div class="menu-mobile-box">
+                                    <a href="#" class="menu-mobile__link">О компании</a>
+                                    <a href="#" class="menu-mobile__link">Доставка и гарантия</a>
+                                    <a href="#" class="menu-mobile__link">Как сделать заказ</a>
+                                    <a href="#" class="menu-mobile__link">Контакты</a>
+                                </div>
+                                <div class="menu-mobile-box">
+                                    <a href="#" class="menu-mobile__link">Личный кабинет</a>
+                                </div>
+                                <div class="menu-mobile-box">
+                                    <a href="#" class="menu-mobile__link">
+                                        <div class="header-basket__name">Корзина
+                                            <span class="header-basket__count"><span>5</span></span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
                         <div class="header-catalog">
                             <a href="#" class="header-catalog__link">
                                     <span class="header-catalog-icon">
@@ -277,6 +306,11 @@
                         </div>
                     </div>
                     <div class="header-operation-right">
+                        <div class="header-search-mobile">
+                            <a href="#">
+                                <svg class="icon-search"><use xlink:href="./img/main.svg#icon-search"/></svg>
+                            </a>
+                        </div>
                         <div class="header-phone">
                             <a href="tel:74997045686" class="header-phone__link">
                                 <svg class="icon-phone"><use xlink:href="./img/main.svg#icon-phone"/></svg>
@@ -286,7 +320,7 @@
                         <div class="header-auth">
                             <a href="#" class="header-auth__link">
                                 <svg class="icon-user"><use xlink:href="./img/main.svg#icon-user"/></svg>
-                                Войти
+                                <span>Войти</span>
                             </a>
                         </div>
                         <div class="header-basket">
@@ -560,197 +594,301 @@
 
         <div class="catalog">
             <div class="catalog-col__left">
-                <div class="filter">
-                    <!--START filter-item-->
-                    <div class="filter-item">
-                        <a href="#" class="filter-item-title">Цена</a>
-                        <div class="filter-box">
-                            <div class="range-slider">
-                                <div class="formCost">
-                                    <input type="text" class="form__input range-slider__minCost-price" value="0"/>
-                                    <span> − </span>
-                                    <input type="text" class="form__input range-slider__maxCost-price" value="99999"/>
-                                </div>
-                                <div class="sliderCont">
-                                    <div class="range-slider_default range-slider__price"></div>
+
+
+
+                <!--<div class="filter-layout">-->
+                    <div class="filter">
+                        <form action="" method="POST" name="filter-product">
+                            <!--START filter-mobile. Блок появляется в мобильной версии-->
+                            <div class="filter-mobile">
+                                <div class="filter-mobile-head">
+                                    <a href="" class="filter-mobile-head__reset">Сбросить</a>
+                                    <div class="filter-mobile-head__title">
+                                        <svg class="icon-filter"><use xlink:href="./img/main.svg#icon-filter"/></svg>
+                                        <span>Фильтры</span>
+                                    </div>
+                                    <a href="#" class="filter-mobile-head__close">
+                                        <svg class="icon-close"><use xlink:href="./img/main.svg#icon-close"/></svg>
+                                    </a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!--END filter-item-->
-                    <!--START filter-item-->
-                    <div class="filter-item">
-                        <a href="#" class="filter-item-title">WAN порты Ethernet</a>
-                        <div class="filter-box">
-                            <ul class="filter-box-list">
-                                <li class="filter-box-list__item">
-                                    <div class="c-checkbox">
-                                        <input class="c-checkbox-input" type="checkbox" name="wan-1" id="item_1" checked="checked">
-                                        <label class="c-checkbox-label" for="item_1"><span>2 x GE</span></label>
+                            <div class="filter-mobile">
+                                <div class="filter-item">
+                                    <div class="filter-box">
+                                        <div class="catalog-model">
+                                            <a href="#" class="catalog-model__product">Cisco ISR 4000</a>
+                                            <a href="#" class="catalog-model__product">Cisco 800 </a>
+                                            <a href="#" class="catalog-model__product">Cisco 1900</a>
+                                            <a href="#" class="catalog-model__product">Cisco 1800 (EOL)</a>
+                                            <a href="#" class="catalog-model__product">ISR 4000 (4300) </a>
+                                            <a href="#" class="catalog-model__product">Cisco 2900</a>
+                                            <a href="#" class="catalog-model__product">Cisco 2800 (EOL)</a>
+                                            <a href="#" class="catalog-model__product"> ISR 4000 (4400) </a>
+                                            <a href="#" class="catalog-model__product">Cisco 3900</a>
+                                            <a href="#" class="catalog-model__product">Cisco 3800 Series (EOL)</a>
+                                            <a href="#" class="catalog-model__product">ASR1000</a>
+                                            <a href="#" class="catalog-model__product">Cisco 7200 (EOL)</a>
+                                            <a href="#" class="catalog-model__product">ASR9000</a>
+                                            <a href="#" class="catalog-model__product">7600-S</a>
+                                            <a href="#" class="catalog-model__product">Cisco 7600 (EOL)</a>
+                                        </div>
                                     </div>
-                                </li>
-                                <li class="filter-box-list__item">
-                                    <div class="c-checkbox">
-                                        <input class="c-checkbox-input" type="checkbox" name="wan-1" id="item_2">
-                                        <label class="c-checkbox-label" for="item_2"><span>3 x GE</span></label>
-                                    </div>
-                                </li>
-                                <li class="filter-box-list__item">
-                                    <div class="c-checkbox">
-                                        <input class="c-checkbox-input" type="checkbox" name="wan-1" id="item_3">
-                                        <label class="c-checkbox-label" for="item_3"><span>4 x GE</span></label>
-                                    </div>
-                                </li>
 
-                            </ul>
-                        </div>
-                    </div>
-                    <!--END filter-item-->
-                    <!--START filter-item-->
-                    <div class="filter-item">
-                        <a href="#" class="filter-item-title">Протоколы WIFI</a>
-                        <div class="filter-box">
-                            <ul class="filter-box-list">
-                                <li class="filter-box-list__item">
-                                    <div class="c-checkbox">
-                                        <input class="c-checkbox-input" type="checkbox" name="wifi-1" id="item_5">
-                                        <label class="c-checkbox-label" for="item_5"><span>802.11a/b/g/n</span></label>
-                                    </div>
-                                </li>
-                                <li class="filter-box-list__item">
-                                    <div class="c-checkbox">
-                                        <input class="c-checkbox-input" type="checkbox" name="wifi-1" id="item_6">
-                                        <label class="c-checkbox-label" for="item_6"><span>802.11a/b/g/n/ac</span></label>
-                                    </div>
-                                </li>
-                                <li class="filter-box-list__item">
-                                    <div class="c-checkbox">
-                                        <input class="c-checkbox-input" type="checkbox" name="wifi-1" id="item_7">
-                                        <label class="c-checkbox-label" for="item_7"><span>802.11b/g/n</span></label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--END filter-item-->
-                    <!--START filter-item-->
-                    <div class="filter-item">
-                        <a href="#" class="filter-item-title">Антенны</a>
-                        <div class="filter-box">
+                                </div>
+                                <div class="filter-item">
+                                    <a href="#" class="filter-item-title">сортировать по:</a>
+                                    <div class="filter-box">
+                                        <div class="catalog-sorting-operation">
+                                            <div class="catalog-sorting-operation__item">
+                                                <select name="" class="c-select">
+                                                    <option value="Цене">Цене</option>
+                                                    <option value="Рейтингу">Рейтингу</option>
+                                                    <option value="Скидке">Скидке</option>
+                                                    <option value="Популярности">Популярности</option>
+                                                </select>
+                                            </div>
+                                            <div class="catalog-sorting-operation__item small">
+                                                <select name="" class="c-select c-select">
+                                                    <option value="20">20</option>
+                                                    <option value="30">30</option>
+                                                    <option value="40">40</option>
+                                                    <option value="50">50</option>
+                                                </select>
+                                            </div>
 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-item">
 
-                            <ul class="filter-box-list">
-                                <li class="filter-box-list__item">
-                                    <div class="c-checkbox">
-                                        <input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_8">
-                                        <label class="c-checkbox-label" for="item_8">
-                                            <span>2 внешних 2.4 GHz 2xRP-TNC/5 GHz 2xRP-TNC</span>
-                                        </label>
+                                    <div class="catalog-sorting-availability">
+                                        <div class="catalog-sorting__title">Наличие в магазине</div>
+                                        <div class="c-checkbox">
+                                            <input class="c-checkbox-input" type="checkbox" name="availability" id="item_availability">
+                                            <label class="c-checkbox-label" for="item_availability"><span></span></label>
+                                        </div>
                                     </div>
-                                </li>
-                                <li class="filter-box-list__item">
-                                    <div class="c-checkbox">
-                                        <input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_9">
-                                        <label class="c-checkbox-label" for="item_9"><span>3 внешних 2.4/5 GHz</span></label>
-                                    </div>
-                                </li>
-                                <li class="filter-box-list__item">
-                                    <div class="c-checkbox">
-                                        <input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_10">
-                                        <label class="c-checkbox-label" for="item_10"><span>3 внешних 2.4 GHz RP-TNC</span></label>
-                                    </div>
-                                </li>
-                                <!--<li class="filter-box-list__item">-->
-                                    <!--<div class="c-checkbox">-->
-                                    <!--<input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_11">-->
-                                    <!--<label class="c-checkbox-label" for="item_11"><span>2 внешних 2.4 GHz/5 GHz</span></label>-->
-                                    <!--</div>-->
-                                <!--</li>-->
-                                <!--<li class="filter-box-list__item">-->
-                                    <!--<div class="c-checkbox">-->
-                                    <!--<input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_12">-->
-                                    <!--<label class="c-checkbox-label" for="item_12"><span>2.4 GHz/5 GHz</span></label>-->
-                                    <!--</div>-->
-                                <!--</li>-->
-                                <!--<li class="filter-box-list__item">-->
-                                    <!--<div class="c-checkbox">-->
-                                    <!--<input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_13">-->
-                                    <!--<label class="c-checkbox-label" for="item_13"><span>2.5 GHz/5 GHz</span></label>-->
-                                    <!--</div>-->
-                                <!--</li>-->
-                                <!--<li class="filter-box-list__item">-->
-                                    <!--<div class="c-checkbox">-->
-                                    <!--<input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_14">-->
-                                    <!--<label class="c-checkbox-label" for="item_14"><span>2.6 GHz/5 GHz</span></label>-->
-                                    <!--</div>-->
-                                <!--</li>-->
-                                <!--<li class="filter-box-list__item">-->
-                                    <!--<div class="c-checkbox">-->
-                                    <!--<input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_15">-->
-                                    <!--<label class="c-checkbox-label" for="item_15"><span>2.7 GHz/5 GHz</span></label>-->
-                                    <!--</div>-->
-                                <!--</li>-->
-                                <li class="filter-box-list__item">
-                                    <a href="#" class="filter-box-list__more">Еще (8)</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--END filter-item-->
-                    <!--START filter-item-->
-                    <div class="filter-item">
-                        <a href="#" class="filter-item-title">Wan скорость</a>
-                        <div class="filter-box">
-                            <ul class="filter-box-list">
-                                <li class="filter-box-list__item">
-                                    <div class="c-checkbox">
-                                        <input class="c-checkbox-input" type="checkbox" name="wan_speed-1" id="item_25">
-                                        <label class="c-checkbox-label" for="item_25"><span>50-100 Mbps</span></label>
-                                    </div>
-                                </li>
-                                <li class="filter-box-list__item">
-                                    <div class="c-checkbox">
-                                        <input class="c-checkbox-input" type="checkbox" name="wan_speed-1" id="item_26">
-                                        <label class="c-checkbox-label" for="item_26"><span>150-500 Mbps</span></label>
-                                    </div>
-                                </li>
-                                <li class="filter-box-list__item">
-                                    <div class="c-checkbox">
-                                        <input class="c-checkbox-input" type="checkbox" name="wan_speed-1" id="item_27">
-                                        <label class="c-checkbox-label" for="item_27"><span>1G Mbps or above</span></label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--END filter-item-->
-                    <!--START filter-item-->
-                    <div class="filter-item">
-                        <a href="#" class="filter-item-title">Популярные теги</a>
-                        <div class="filter-box">
-                            <div class="filter-box-tag">
-                                <a href="#" class="filter-box-tag__link">24 Port Switch</a>
-                                <a href="#" class="filter-box-tag__link">Layer 3 Switch</a>
-                                <a href="#" class="filter-box-tag__link">48 Port Gigabit Switch</a>
-                                <a href="#" class="filter-box-tag__link">Data Switch</a>
-                                <a href="#" class="filter-box-tag__link">Lan Switch</a>
-                                <a href="#" class="filter-box-tag__link">Huawei Gigabit Switch</a>
-                                <a href="#" class="filter-box-tag__link">24 Port Switch</a>
-                                <a href="#" class="filter-box-tag__link">Layer 3 Switch</a>
-                                <a href="#" class="filter-box-tag__link">48 Port Gigabit Switch</a>
-                                <a href="#" class="filter-box-tag__link">Data Switch</a>
-                                <a href="#" class="filter-box-tag__link">Lan Switch</a>
-                                <a href="#" class="filter-box-tag__link">Huawei Gigabit Switch</a>
-                                <a href="#" class="filter-box-tag__link">Huawei Layer 3 Routing Switch</a>
+
+                                </div>
                             </div>
-                        </div>
+                            <!--END filter-mobile-->
+
+                            <!--START filter-item-->
+                            <div class="filter-item">
+                                <a href="#" class="filter-item-title">Цена</a>
+                                <div class="filter-box">
+                                    <div class="range-slider">
+                                        <div class="formCost">
+                                            <input type="text" class="form__input range-slider__minCost-price" value="0"/>
+                                            <span> − </span>
+                                            <input type="text" class="form__input range-slider__maxCost-price" value="99999"/>
+                                        </div>
+                                        <div class="sliderCont">
+                                            <div class="range-slider_default range-slider__price"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END filter-item-->
+                            <!--START filter-item-->
+                            <div class="filter-item">
+                                <a href="#" class="filter-item-title">WAN порты Ethernet</a>
+                                <div class="filter-box">
+                                    <ul class="filter-box-list">
+                                        <li class="filter-box-list__item">
+                                            <div class="c-checkbox">
+                                                <input class="c-checkbox-input" type="checkbox" name="wan-1" id="item_1" checked="checked">
+                                                <label class="c-checkbox-label" for="item_1"><span>2 x GE</span></label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-box-list__item">
+                                            <div class="c-checkbox">
+                                                <input class="c-checkbox-input" type="checkbox" name="wan-1" id="item_2">
+                                                <label class="c-checkbox-label" for="item_2"><span>3 x GE</span></label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-box-list__item">
+                                            <div class="c-checkbox">
+                                                <input class="c-checkbox-input" type="checkbox" name="wan-1" id="item_3">
+                                                <label class="c-checkbox-label" for="item_3"><span>4 x GE</span></label>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--END filter-item-->
+                            <!--START filter-item-->
+                            <div class="filter-item">
+                                <a href="#" class="filter-item-title">Протоколы WIFI</a>
+                                <div class="filter-box">
+                                    <ul class="filter-box-list">
+                                        <li class="filter-box-list__item">
+                                            <div class="c-checkbox">
+                                                <input class="c-checkbox-input" type="checkbox" name="wifi-1" id="item_5">
+                                                <label class="c-checkbox-label" for="item_5"><span>802.11a/b/g/n</span></label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-box-list__item">
+                                            <div class="c-checkbox">
+                                                <input class="c-checkbox-input" type="checkbox" name="wifi-1" id="item_6">
+                                                <label class="c-checkbox-label" for="item_6"><span>802.11a/b/g/n/ac</span></label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-box-list__item">
+                                            <div class="c-checkbox">
+                                                <input class="c-checkbox-input" type="checkbox" name="wifi-1" id="item_7">
+                                                <label class="c-checkbox-label" for="item_7"><span>802.11b/g/n</span></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--END filter-item-->
+                            <!--START filter-item-->
+                            <div class="filter-item">
+                                <a href="#" class="filter-item-title">Антенны</a>
+                                <div class="filter-box">
+
+
+                                    <ul class="filter-box-list">
+                                        <li class="filter-box-list__item">
+                                            <div class="c-checkbox">
+                                                <input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_8">
+                                                <label class="c-checkbox-label" for="item_8">
+                                                    <span>2 внешних 2.4 GHz 2xRP-TNC/5 GHz 2xRP-TNC</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-box-list__item">
+                                            <div class="c-checkbox">
+                                                <input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_9">
+                                                <label class="c-checkbox-label" for="item_9"><span>3 внешних 2.4/5 GHz</span></label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-box-list__item">
+                                            <div class="c-checkbox">
+                                                <input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_10">
+                                                <label class="c-checkbox-label" for="item_10"><span>3 внешних 2.4 GHz RP-TNC</span></label>
+                                            </div>
+                                        </li>
+                                        <!--<li class="filter-box-list__item">-->
+                                        <!--<div class="c-checkbox">-->
+                                        <!--<input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_11">-->
+                                        <!--<label class="c-checkbox-label" for="item_11"><span>2 внешних 2.4 GHz/5 GHz</span></label>-->
+                                        <!--</div>-->
+                                        <!--</li>-->
+                                        <!--<li class="filter-box-list__item">-->
+                                        <!--<div class="c-checkbox">-->
+                                        <!--<input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_12">-->
+                                        <!--<label class="c-checkbox-label" for="item_12"><span>2.4 GHz/5 GHz</span></label>-->
+                                        <!--</div>-->
+                                        <!--</li>-->
+                                        <!--<li class="filter-box-list__item">-->
+                                        <!--<div class="c-checkbox">-->
+                                        <!--<input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_13">-->
+                                        <!--<label class="c-checkbox-label" for="item_13"><span>2.5 GHz/5 GHz</span></label>-->
+                                        <!--</div>-->
+                                        <!--</li>-->
+                                        <!--<li class="filter-box-list__item">-->
+                                        <!--<div class="c-checkbox">-->
+                                        <!--<input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_14">-->
+                                        <!--<label class="c-checkbox-label" for="item_14"><span>2.6 GHz/5 GHz</span></label>-->
+                                        <!--</div>-->
+                                        <!--</li>-->
+                                        <!--<li class="filter-box-list__item">-->
+                                        <!--<div class="c-checkbox">-->
+                                        <!--<input class="c-checkbox-input" type="checkbox" name="antenna-1" id="item_15">-->
+                                        <!--<label class="c-checkbox-label" for="item_15"><span>2.7 GHz/5 GHz</span></label>-->
+                                        <!--</div>-->
+                                        <!--</li>-->
+                                        <li class="filter-box-list__item">
+                                            <a href="#" class="filter-box-list__more">Еще (8)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--END filter-item-->
+                            <!--START filter-item-->
+                            <div class="filter-item">
+                                <a href="#" class="filter-item-title">Wan скорость</a>
+                                <div class="filter-box">
+                                    <ul class="filter-box-list">
+                                        <li class="filter-box-list__item">
+                                            <div class="c-checkbox">
+                                                <input class="c-checkbox-input" type="checkbox" name="wan_speed-1" id="item_25">
+                                                <label class="c-checkbox-label" for="item_25"><span>50-100 Mbps</span></label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-box-list__item">
+                                            <div class="c-checkbox">
+                                                <input class="c-checkbox-input" type="checkbox" name="wan_speed-1" id="item_26">
+                                                <label class="c-checkbox-label" for="item_26"><span>150-500 Mbps</span></label>
+                                            </div>
+                                        </li>
+                                        <li class="filter-box-list__item">
+                                            <div class="c-checkbox">
+                                                <input class="c-checkbox-input" type="checkbox" name="wan_speed-1" id="item_27">
+                                                <label class="c-checkbox-label" for="item_27"><span>1G Mbps or above</span></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--END filter-item-->
+                            <!--START filter-item-->
+                            <div class="filter-item">
+                                <a href="#" class="filter-item-title">Популярные теги</a>
+                                <div class="filter-box">
+                                    <div class="filter-box-tag">
+                                        <a href="#" class="filter-box-tag__link">24 Port Switch</a>
+                                        <a href="#" class="filter-box-tag__link">Layer 3 Switch</a>
+                                        <a href="#" class="filter-box-tag__link">48 Port Gigabit Switch</a>
+                                        <a href="#" class="filter-box-tag__link">Data Switch</a>
+                                        <a href="#" class="filter-box-tag__link">Lan Switch</a>
+                                        <a href="#" class="filter-box-tag__link">Huawei Gigabit Switch</a>
+                                        <a href="#" class="filter-box-tag__link">24 Port Switch</a>
+                                        <a href="#" class="filter-box-tag__link">Layer 3 Switch</a>
+                                        <a href="#" class="filter-box-tag__link">48 Port Gigabit Switch</a>
+                                        <a href="#" class="filter-box-tag__link">Data Switch</a>
+                                        <a href="#" class="filter-box-tag__link">Lan Switch</a>
+                                        <a href="#" class="filter-box-tag__link">Huawei Gigabit Switch</a>
+                                        <a href="#" class="filter-box-tag__link">Huawei Layer 3 Routing Switch</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END filter-item-->
+                            <!--START filter-mobile. Блок появляется в мобильной версии-->
+                            <div class="filter-mobile">
+                                <div class="filter-mobile-footer">
+                                    <div class="filter-item">
+                                        <div class="filter-box">
+                                            <button class="c-btn c-btn--big">Показать 6 товаров</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END filter-mobile-->
+                        </form>
+
                     </div>
-                    <!--END filter-item-->
-                </div>
+                <!--</div>-->
+
             </div>
             <div class="catalog-col__right">
+
                 <div class="catalog-body">
                     <h1 class="catalog-title">Маршрутизаторы Cisco ISR 4000</h1>
+                    <div class="filter-mobile">
+                        <a href="#" class="filter-mobile-btn js-filter-mobile-btn" id="">
+                            <svg class="icon-filter"><use xlink:href="./img/main.svg#icon-filter"/></svg>
+                            <span>Фильтры</span>
+
+                            <svg class="icon-arrow-down"><use xlink:href="./img/main.svg#icon-arrow-down"/></svg>
+                        </a>
+                    </div>
                     <div class="catalog-model">
                         <a href="#" class="catalog-model__product">Cisco ISR 4000</a>
                         <a href="#" class="catalog-model__product">Cisco 800 </a>
@@ -1118,8 +1256,9 @@
             </div>
 
         </div>
-
-
+    </div>
+    <div class="footer-bottom-mobile">
+        <a class="footer-bottom__dev" href="#">Site by Leeft</a>
     </div>
 </footer>
 
