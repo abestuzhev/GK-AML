@@ -453,7 +453,7 @@ input.c-input::placeholder { color: #5d5d5d; }
         &__item {
             display: inline-block;
 
-            a {
+            & > a {
                 color: #404041;
                 text-transform: uppercase;
                 font-weight: 700;
@@ -477,6 +477,10 @@ input.c-input::placeholder { color: #5d5d5d; }
 
         &__item.current {
             position: relative;
+
+            .tab-content {
+                display: block;
+            }
 
             a {
                 color: #188cca;

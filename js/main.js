@@ -305,9 +305,42 @@ $(function () {
         $(this).parent().addClass("current");
         $(this).parent().siblings().removeClass("current");
         var tab = $(this).attr("href");
-        $('.c-tabs-body').find(".tab-content").not(tab).css("display", "none");
+        $('.c-tabs').find(".tab-content").not(tab).css("display", "none");
         // $(this).parents('.tabs-menu').parent().siblings('.tab').find(".tab-content").not(tab).css("display", "none");
         $(tab).fadeIn();
+    });
+
+    function mobileTabs(){
+
+        $('.profile .c-tabs-menu__item').each(function(){
+            var tab = $(this).find('a').attr("href");
+            $(this).append($(tab));
+        });
+    };
+
+    function mobileTabsDestroy(){
+
+        $('.profile .c-tabs-menu__item').each(function(){
+            var tab = $(this).find('a').attr("href");
+            $(this).parents('.c-tabs').find('.c-tabs-body').append($(tab));
+            if($(this).hasClass('current')){
+                var tabLink = $(this).find('a').attr("href");
+                $(this).parents('.c-tabs').find(tabLink).css("display", "block");
+            }
+
+        });
+    };
+
+    if ($(window).width() < 790) {
+        mobileTabs();
+    }
+
+    $(window).resize(function() {
+        if ($(window).width() < 790) {
+            mobileTabs();
+        }else {
+            mobileTabsDestroy();
+        }
     });
 
 
@@ -318,16 +351,32 @@ $(function () {
         fade: true,
         asNavFor: '.product-slider-nav'
     });
-    $('.product-slider-nav').slick({
+
+
+
+
+
+   $('.product-slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product-slider-for',
+        dots: false,
+        focusOnSelect: true,
+        vertical: true,
+        verticalSwiping: true
+    });
+
+
+   $('.horizontal-slider-nav').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.product-slider-for',
         dots: false,
         centerMode: true,
-        focusOnSelect: true,
-        vertical: true,
-        verticalSwiping: true
+        focusOnSelect: true
     });
+
+
     
     $('.header-menu-mobile .header-catalog-icon').on('click', function(e){
         e.preventDefault();

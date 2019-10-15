@@ -2338,6 +2338,33 @@
     }
 }
 
+.horizontal-slider-nav {
+    height: 0;
+    overflow: hidden;
+
+    &__item {
+        margin: 4px 0;
+        width: 73px !important;
+        height: 73px !important;
+        border-radius: 6px;
+        border: 1px solid #e5e5e5 !important;
+        //-webkit-background-size: cover;
+        //background-size: cover;
+        background-position: 50% 50%;
+        padding: 10px;
+        margin: 0 4px;
+        display: flex !important;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 90%;
+        }
+    }
+}
+
 .category {
     &-head {
         color: #293439;
