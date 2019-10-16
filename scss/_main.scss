@@ -3089,7 +3089,7 @@
 
     .c-tabs-menu {
         //border-bottom: 1px solid #e7e7e7;
-        box-shadow: 0 1px 1px 0 #e7e7e7;
+        //box-shadow: 0 1px 1px 0 #e7e7e7;
 
         &__item {
             position: relative;
@@ -3245,6 +3245,7 @@
             justify-content: space-between;
             align-items: stretch;
             border-bottom: 1px solid #e5e5e5;
+            position: relative;
 
             &:last-child {
                 border: none;
@@ -3340,6 +3341,8 @@
 
             a {
                 color: #207245;
+                display: inline-block;
+                max-width: 69px;
             }
 
             svg {
@@ -3356,24 +3359,24 @@
 
                 }
                 &:nth-child(2) {
-                    width: 42%;
+                    width: 38%;
                     text-align: left;
                     align-items: flex-start;
                 }
                 &:nth-child(3) {
-                    width: 10%;
+                    width: 14%;
                 }
                 &:nth-child(4) {
-                    width: 8%;
-                }
-                &:nth-child(5) {
-                    width: 8%;
-                }
-                &:nth-child(6) {
                     width: 10%;
                 }
+                &:nth-child(5) {
+                    width: 10%;
+                }
+                &:nth-child(6) {
+                    width: 12%;
+                }
                 &:nth-child(7) {
-                    width: 6%;
+                    width: 8%;
                 }
             }
         }
