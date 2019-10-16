@@ -31,6 +31,7 @@
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: center;
+        padding-right: 20px;
 
         .icon-logo {
             fill: #fff;
@@ -104,6 +105,11 @@
         //position: relative;
         //z-index: 10;
 
+        &.active {
+            background-color: #f06314;
+            color: #ffffff;
+        }
+
         &-icon {
             position: absolute;
             z-index: 12;
@@ -154,7 +160,7 @@
 
         }
 
-        &:hover .catalog-menu {
+        &.js-desktop-hover:hover .catalog-menu {
             opacity: 1;
             visibility: visible;
             z-index: 10;
@@ -180,6 +186,13 @@
             justify-content: flex-start;
             align-items: stretch;
             overflow: hidden;
+
+            &.is-show {
+                opacity: 1;
+                visibility: visible;
+                z-index: 10;
+                transition: all .1s ease-in-out;
+            }
 
             &-category {
                 max-width: 180px;
@@ -500,6 +513,21 @@
         &-mobile {
             display: none;
             padding: 10px 8px;
+
+            &.active {
+                background-color: #f06314;
+
+                svg {
+                    fill: #fff;
+                }
+
+                &:hover {
+                    background-color: #f06314;
+                    svg {
+                        fill: #fff;
+                    }
+                }
+            }
         }
     }
 }
@@ -3094,6 +3122,15 @@
         &__item {
             position: relative;
             bottom: -1px;
+        }
+    }
+
+    .icon-edit,
+    .icon-basket-del {
+        transiion: all .2s ease-in-out;
+        &:hover {
+            fill: #f06314;
+            transiion: all .2s ease-in-out;
         }
     }
 
