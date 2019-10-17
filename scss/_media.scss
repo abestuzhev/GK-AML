@@ -166,6 +166,11 @@
 
 }
 @media (max-width: 1150px) {
+
+    .header-logo {
+        width: 250px;
+    }
+
     .header-menu {
         //display: none;
 
@@ -196,10 +201,6 @@
 
     .footer-social {
         padding: 0 15px;
-    }
-
-    .slider {
-        display: none;
     }
 
     .about-list__item {
@@ -506,6 +507,11 @@
         padding: 0;
     }
 
+    .slider-item__title {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
 }
 
 @media (max-width: 1030px) {
@@ -525,7 +531,7 @@
 
     .header-body {
         background-color: #374247;
-        padding: 0 16px;
+        padding: 0 6px 0 6px;
     }
 
     .header-logo{
@@ -607,7 +613,7 @@
     }
 
     .header-basket__link {
-        padding: 8px 0px 10px 26px;
+        padding: 8px 10px 10px 26px;
     }
 
     .header-basket__link .icon-basket {
@@ -669,6 +675,25 @@
     .header-catalog .catalog-menu-category {
         border: none;
     }
+
+    .slider {
+        width: 0;
+        height: 0;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        margin: 0 !important;
+        display: none;
+    }
+
+
+
+    .slider-mobile {
+        position: relative;
+        top: auto;
+        left: auto
+    }
+
+
 }
 @media (max-width: 790px) {
 
@@ -949,6 +974,28 @@
         font-size: 24px
     }
 
+    .slider-mobile-card__img {
+        height: 300px;
+    }
+
+    .slider-mobile .slick-prev, .slider-mobile .slick-next {
+        top: 150px;
+    }
+
+    .slider-mobile-card__title {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .slider-mobile-card__text {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .slider-mobile-card__btn {
+        font-size: 14px;
+    }
+
 
 
 }
@@ -1124,7 +1171,21 @@
         padding: 11px 20px;
     }
 
+    .slider-mobile-card__img {
+        height: 200px;
+    }
 
+    .slider-mobile .slick-prev, .slider-mobile .slick-next {
+        top: 100px;
+    }
+
+    .slider-mobile-card__title {
+        font-size: 20px;
+    }
+
+    .slider-mobile .slick-dots {
+        bottom: 12px;
+    }
 
 }
 
@@ -1296,6 +1357,34 @@
 
     .popup .c-form-col {
         width: 100%;
+    }
+
+    .header-operation-right,
+    .header-auth {
+        position: static;
+    }
+
+    .header-auth-popup {
+        left: -16px;
+        right: -16px;
+    }
+
+    .header-auth-popup__link {
+        display: block;
+        padding: 14px 16px;
+        color: #273136;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .slider-mobile-card__img {
+        height: 150px;
+    }
+
+    .slider-mobile .slick-prev, .slider-mobile .slick-next {
+        top: 74px;
     }
 
 }

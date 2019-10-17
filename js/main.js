@@ -14,8 +14,30 @@ $(window).on("load", function () {
 $(function () {
     $('.slider').slick({
         dots: true,
+        infinite: true,
+        adaptiveHeight: true
+    });
+
+    function initMobileSlider(){
+
+    }
+
+    $('.slider-mobile').slick({
+        dots: true,
         infinite: true
     });
+
+
+    if ($(window).width() < 1000) {
+        initMobileSlider();
+    }
+
+    $(window).resize(function () {
+        if ($(window).width() < 1000) {
+            initMobileSlider();
+        }
+    });
+
 
     $('.reviews-list').slick({
         dots: true,
@@ -595,9 +617,9 @@ $(function () {
                 $header.css({
                     'padding-right': widthScroll
                 });
-                $('.mfp-wrap').css({
-                    'overflow-y':'scroll'
-                });
+                // $('.mfp-wrap').css({
+                //     'overflow-y':'scroll'
+                // });
                 // console.log('Есть полоса прокрутки');
             }else {
                 // console.log('Нет полосы прокрутки');
@@ -638,7 +660,16 @@ $(function () {
         $('.header-auth__link').removeClass('active');
     });
 
+    $('.js-phone-mobile-mask').mask('0(000)000-00-00', {clearIfNotMatch: true});
+    $('.js-phone-stationary-mask').mask('00-00-00', {clearIfNotMatch: true});
 
+    
+    
+    /*кастомный скролл в корзине*/
+    $(".popup-basket__body").mCustomScrollbar({
+        // theme:"rounded-dots",
+        scrollInertia:300
+    });
 
     //footer script
 });

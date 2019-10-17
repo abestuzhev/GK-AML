@@ -644,6 +644,7 @@ input.c-input--success::placeholder { color: #329954; }
     //transition: all .1s ease-out;
     //overflow-y: scroll;
     font-size: 0;
+    overflow-y: scroll;
 }
 
 .mfp-wrap.is-visible {

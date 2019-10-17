@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
+    <link href="js/scrollbar/jquery.mCustomScrollbar.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="js/sumoselect/sumoselect.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -431,6 +432,36 @@
                                                 </div>
                                             </li>
                                             <!--END popup-basket-list__item-->
+
+                                            <!--START popup-basket-list__item-->
+                                            <li class="popup-basket-list__item">
+                                                <div class="popup-basket-card">
+                                                    <div class="popup-basket-card__img">
+                                                        <img src="./img/basket-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="popup-basket-card__body">
+                                                        <div class="popup-basket-card__title">
+                                                            <a href="#"> Huawei AP2010DN 50082179 </a>
+                                                        </div>
+
+                                                        <div class="popup-basket-card-operation">
+                                                            <div class="popup-basket-card-operation__col">Цена:</div>
+                                                            <div class="popup-basket-card-operation__col">S: <span>$3,543.68</span></div>
+                                                        </div>
+                                                        <div class="popup-basket-card-operation">
+                                                            <div class="popup-basket-card-operation__col">Кол-во:</div>
+                                                            <div class="popup-basket-card-operation__col"><input
+                                                                    type="number" class="c-input" value="1" min="1"></div>
+                                                        </div>
+
+                                                        <div class="popup-basket-card__footer">
+                                                            <a href="#" class="popup-basket-card__btn">Изменить</a>
+                                                            <a href="#" class="popup-basket-card__btn">Удалить</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!--END popup-basket-list__item-->
                                         </ul>
                                     </div>
                                     <div class="popup-basket__footer">
@@ -497,7 +528,7 @@
                             P408i-a 8SFF 500W RPS Solution<br>
                             Server
                         </div>
-                        <a href="#" class="slider-item__btn">Узнать больше</a>
+                        <a href="#" class="slider-item__btn">Узнать больше <svg class="icon-arrow-right"><use xlink:href="./img/main.svg#icon-arrow-right"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -515,6 +546,47 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="slider-mobile slick-load">
+            <!--START slider-mobile-item-->
+            <div class="slider-mobile-item">
+                <div class="slider-mobile-card">
+                    <div class="slider-mobile-card__img">
+                        <img src="./img/slide-mobile-1.jpg" alt="">
+                    </div>
+                    <div class="slider-mobile-card__body">
+                        <div class="slider-mobile-card__title">P05524-B21 - HPE DL380 Gen10 Server</div>
+                        <div class="slider-mobile-card__text">
+                            HPE ProLiant DL380 Gen10
+                            4110 2.1GHz 8-core 1P 16GB-R
+                            P408i-a 8SFF 500W RPS Solution
+                            Server
+                        </div>
+                        <a href="#" class="slider-mobile-card__btn">Узнать больше <svg class="icon-arrow-right"><use xlink:href="./img/main.svg#icon-arrow-right"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <!--END slider-mobile-item-->
+            <!--START slider-mobile-item-->
+            <div class="slider-mobile-item">
+                <div class="slider-mobile-card">
+                    <div class="slider-mobile-card__img">
+                        <img src="./img/slide-mobile-1.jpg" alt="">
+                    </div>
+                    <div class="slider-mobile-card__body">
+                        <div class="slider-mobile-card__title">P05524-B21 - HPE DL380 Gen10 Server</div>
+                        <div class="slider-mobile-card__text">
+                            HPE ProLiant DL380 Gen10
+                            4110 2.1GHz 8-core 1P 16GB-R
+                            P408i-a 8SFF 500W RPS Solution
+                            Server
+                        </div>
+                        <a href="#" class="slider-mobile-card__btn">Узнать больше <svg class="icon-arrow-right"><use xlink:href="./img/main.svg#icon-arrow-right"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <!--END slider-mobile-item-->
         </div>
         <div class="layout">
             <div class="advantages">
@@ -1010,13 +1082,13 @@
                                                     <input type="text" class="c-input" name="company-" placeholder="Адрес электронной почты*" >
                                                 </div>
                                                 <div class="c-form-line">
-                                                    <input type="text" class="c-input" name="company-" placeholder="Телефон*" >
+                                                    <input type="text" class="c-input js-phone-stationary-mask" name="company-" placeholder="Телефон*" >
                                                 </div>
                                                 <div class="c-form-line">
                                                     <input type="text" class="c-input" name="company-" placeholder="Контактное лицо (Ф.И.О.)* " >
                                                 </div>
                                                 <div class="c-form-line">
-                                                    <input type="text" class="c-input" name="company-" placeholder="Мобильный телефон" >
+                                                    <input type="text" class="c-input js-phone-mobile-mask" name="company-" placeholder="Мобильный телефон" >
                                                 </div>
                                                 <div class="c-form-grid">
                                                     <div class="c-form-col c-form-col--6">
@@ -1051,13 +1123,13 @@
                                             </div>
                                             <div class="c-form-col c-form-col--6">
                                                 <div class="c-form-line">
-                                                    <input type="text" class="c-input" name="company-" placeholder="Телефон*" >
+                                                    <input type="text" class="c-input js-phone-stationary-mask" name="company-" placeholder="Телефон*" >
                                                 </div>
                                                 <div class="c-form-line">
                                                     <input type="text" class="c-input" name="company-" placeholder="Контактное лицо (Ф.И.О.)*" >
                                                 </div>
                                                 <div class="c-form-line">
-                                                    <input type="text" class="c-input" name="company-" placeholder="Мобильный телефон " >
+                                                    <input type="text" class="c-input js-phone-mobile-mask" name="company-" placeholder="Мобильный телефон " >
                                                 </div>
                                                 <div class="c-form-grid">
                                                     <div class="c-form-col c-form-col--6">
@@ -1112,7 +1184,9 @@
 <script src="js/slick-1.8.1/slick/slick.min.js"></script>
 <script src="js/svg4everybody.min.js"></script>
 <script>svg4everybody(); // run it now or whenever you are ready</script>
-<script src="js/sumoselect/jquery.sumoselect.min"></script>
+<script src="js/sumoselect/jquery.sumoselect.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
