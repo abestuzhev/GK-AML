@@ -321,6 +321,10 @@
                                     <svg class="icon-user"><use xlink:href="./img/main.svg#icon-user"/></svg>
                                     <span>Войти</span>
                                 </a>
+                                <div class="header-auth-popup">
+                                    <a href="#" class="header-auth-popup__link" id="profile">Личный кабинет</a>
+                                    <a href="#" class="header-auth-popup__link" id="registration">Регистрация</a>
+                                </div>
                             </div>
                             <div class="header-basket">
                                 <a href="#" class="header-basket__link">
@@ -911,23 +915,196 @@
 </div>
 
 
-<!--заказать звонок-->
+<!--личный кабинет-->
 <div class="mfp-wrap popup-auth">
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="mfp-content-bg"></div>
             <div class="popup">
+                <a href="#" class="popup-close js-popup-close">
+                    <svg class="icon-close"><use xlink:href="./img/main.svg#icon-close"/></svg>
+                </a>
                 <div class="popup-box">
-                    <h3 class="popup-title">Заказать звонок <span class="popup-close"></span></h3>
+                    <h3 class="popup-title">Личный кабинет</h3>
                     <div class="popup-body">
+                        <form action="" class="c-form">
+                            <div class="c-form-line">
+                                <input type="email" class="c-input" name="user-email" placeholder="Адрес электронной почты*" required>
+                            </div>
+                            <div class="c-form-line">
+                                <input type="password" class="c-input" name="user-password" placeholder="Пароль*" required>
+                            </div>
+                            <div class="c-form-line">
+                                <div class="c-form-grid">
+                                    <div class="c-form-col c-form-col--6">
+                                        <div class="c-form-text">*обязательные поля</div>
+                                    </div>
+                                    <div class="c-form-col c-form-col--6">
+                                        <div class="popup-forgot-pass">
+                                            <a href="#" class="popup-forgot-pass__link">Забыли пароль</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="c-form-line">
+                                <div class="c-checkbox">
+                                    <input class="c-checkbox-input" type="checkbox" name="remember_me" id="remember_me">
+                                    <label class="c-checkbox-label" for="remember_me"><span>Запомнить меня</span></label>
+                                </div>
+                            </div>
+                            <div class="c-form-line c-form-line--center">
+                                <input type="submit" value="Войти" class="c-btn">
+                            </div>
+                        </form>
                     </div><!--popup-body-->
+                    <div class="popup-footer">
+                        <div class="popup-footer-text">Впервые у нас? <a href="#" class="popup-link">Зарегистрироваться</a></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+
+<div class="mfp-wrap popup-reg">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+                <a href="#" class="popup-close js-popup-close">
+                    <svg class="icon-close"><use xlink:href="./img/main.svg#icon-close"/></svg>
+                </a>
+                <div class="popup-box">
+                    <h3 class="popup-title">Регистрация</h3>
+                    <div class="popup-body">
+                        <form action="" class="c-form">
+                            <div class="c-tabs">
+                                <ul class="c-tabs-menu">
+                                    <li class="c-tabs-menu__item current"><a href="#company-type-1">Юридическое лицо</a></li>
+                                    <li class="c-tabs-menu__item"><a href="#company-type-2">Индивидуальный предприниматель</a></li>
+                                </ul>
+                                <div class="c-tabs-body">
+                                    <div id="company-type-1" class="tab-content">
+                                        <div class="c-form-line">
+                                            <input type="email" class="c-input" name="company-name" placeholder="Полное наименование*" required>
+                                        </div>
+                                        <div class="c-form-grid">
+                                            <div class="c-form-col c-form-col--6">
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="Юридический адрес*" >
+                                                </div>
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="ИНН*" >
+                                                </div>
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="БИК*" >
+                                                </div>
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="Расчетный счет" >
+                                                </div>
+                                            </div>
+                                            <div class="c-form-col c-form-col--6">
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="Адрес электронной почты*" >
+                                                </div>
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="Телефон*" >
+                                                </div>
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="Контактное лицо (Ф.И.О.)* " >
+                                                </div>
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="Мобильный телефон" >
+                                                </div>
+                                                <div class="c-form-grid">
+                                                    <div class="c-form-col c-form-col--6">
+                                                        <div class="c-form-line">
+                                                            <input type="text" class="c-input c-input--error" name="company-" placeholder="Пароль*" >
+                                                        </div>
+                                                    </div>
+                                                    <div class="c-form-col c-form-col--6">
+                                                        <div class="c-form-line">
+                                                            <input type="text" class="c-input c-input--success" name="company-" placeholder="Повторить пароль*" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="company-type-2" class="tab-content">
+                                        <div class="c-form-grid">
+                                            <div class="c-form-col c-form-col--6">
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="Юридический адрес*" >
+                                                </div>
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="ИНН*" >
+                                                </div>
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="ОРГНИП*" >
+                                                </div>
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="Адрес электронной почты*" >
+                                                </div>
+                                            </div>
+                                            <div class="c-form-col c-form-col--6">
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="Телефон*" >
+                                                </div>
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="Контактное лицо (Ф.И.О.)*" >
+                                                </div>
+                                                <div class="c-form-line">
+                                                    <input type="text" class="c-input" name="company-" placeholder="Мобильный телефон " >
+                                                </div>
+                                                <div class="c-form-grid">
+                                                    <div class="c-form-col c-form-col--6">
+                                                        <div class="c-form-line">
+                                                            <input type="text" class="c-input" name="company-" placeholder="Пароль*" >
+                                                        </div>
+                                                    </div>
+                                                    <div class="c-form-col c-form-col--6">
+                                                        <div class="c-form-line">
+                                                            <input type="text" class="c-input" name="company-" placeholder="Повторить пароль*" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="c-form-line">
+                                <div class="c-form-text">обязательное поле*</div>
+                            </div>
+
+
+                            <div class="c-form-line">
+                                <div class="c-checkbox">
+                                    <input class="c-checkbox-input" type="checkbox" name="agreement_registration" id="agreement_registration" checked>
+                                    <label class="c-checkbox-label" for="agreement_registration">
+                                        <span>Нажимая на кнопку подтверждения, я принимаю условия <a href="#">политики обработки персональных данных</a>.</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="c-form-line c-form-line--center">
+                                <input type="submit" value="Регистрация" class="c-btn">
+                            </div>
+                        </form>
+                    </div><!--popup-body-->
+                    <div class="popup-footer">
+                        <div class="popup-footer-text">Уже есть аккаунт? <a href="#" class="popup-link">Войти</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--scripts-->
 

@@ -352,6 +352,48 @@
 
     &-auth {
         border-left: 1px solid #e3e3e3;
+        position: relative;
+
+
+
+        &-popup {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: #fff;
+            border-top: 3px solid #f06314;
+            box-shadow: 0 10px 5px 0 rgba(0,0,0,.1);
+            overflow: hidden;
+            border-radius: 0 0 4px 4px;
+            opacity: 0;
+            visibility: hidden;
+            z-index: -1;
+
+            &__link {
+                display: block;
+                padding: 8px 17px;
+                border-bottom: 1px solid #e5e5e5;
+                text-decoration: none;
+                font-size: 13px;
+                color: #293439;
+                white-space: nowrap;
+
+                &:hover {
+                    color: #f06314;
+                }
+
+                &:last-child {
+                    border: none;
+                }
+            }
+
+            &.is-show {
+                opacity: 1;
+                visibility: visible;
+                z-index: 10;
+            }
+        }
+
         &__link {
             text-decoration: none;
             font-size: 13px;
@@ -359,6 +401,23 @@
             display: block;
             padding: 10px 15px 10px 41px;
             position: relative;
+
+            &.active {
+                background-color: #f06314;
+                color: #ffffff;
+
+                svg {
+                    fill: #fff;
+                }
+
+                &:hover {
+                    color: #fff;
+
+                    .icon-user {
+                        fill: #fff;
+                    }
+                }
+            }
 
             .icon-user {
                 position: absolute;

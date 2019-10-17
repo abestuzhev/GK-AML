@@ -1014,6 +1014,10 @@
         overflow-y: auto;
         height: 100vh;
     }
+
+    .popup-title {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 580px) {
@@ -1119,6 +1123,8 @@
         font-size: 13px;
         padding: 11px 20px;
     }
+
+
 
 }
 
@@ -1273,6 +1279,23 @@
 
     .main-title {
         font-size: 19px;
+    }
+
+    .popup-title {
+        text-align: left;
+        font-size: 19px;
+    }
+
+    .popup {
+        padding: 24px 16px 34px;
+    }
+
+    .popup .c-form-grid {
+        display: block;
+    }
+
+    .popup .c-form-col {
+        width: 100%;
     }
 
 }

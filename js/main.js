@@ -623,7 +623,20 @@ $(function () {
         }
     });
 
-    showPopup(".header-auth", '.popup-auth');
+    showPopup("#profile", '.popup-auth');
+    showPopup("#registration", '.popup-reg');
+
+    $(document).on('click', '.header-auth__link', function (e) {
+        e.preventDefault();
+        $('.header-auth-popup').toggleClass('is-show');
+        $(this).toggleClass('active');
+    });
+
+    $(document).on('click', '.header-auth-popup__link', function (e) {
+        e.preventDefault();
+        $('.header-auth-popup').removeClass('is-show');
+        $('.header-auth__link').removeClass('active');
+    });
 
 
 
