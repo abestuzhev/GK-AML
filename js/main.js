@@ -537,6 +537,95 @@ $(function () {
 
     backToTop('.footer-bottom__scrollup', 'body,html');
 
+    /*------------------------------*/
+    /*------------------------------*/
+    /*------------------------------*/
+
+    $('.mfp-content-bg').on('click', function(e){
+        e.preventDefault();
+        $(this).parents('.mfp-wrap').removeClass('is-visible');
+        $('.mfp-bg').removeClass('is-visible');
+        $html.css({
+            'margin-right':'0'
+        }).removeClass('blocked');
+        $('.wrapper').removeClass('fixed-input');
+        $('.header.sticky').css({
+            // 'right':'0'
+        });
+        // console.log('hide popup');
+
+        $header.css({
+            'padding-right': '0'
+        });
+
+        var parentModal = $(this).parents('.mfp-wrap');
+        if(parentModal.data('save')){
+            onPopupClose(parentModal);
+        }
+    });
+
+    $(".popup-bg").click(function (e) {
+        e.preventDefault();
+        $('.popup').parents().removeClass('is-visible');
+        // $('.fixed-overlay').removeClass('is-visible');
+        $('html').removeClass('body-popup');
+    });
+
+
+    var $html = $('html');
+    var $header = $('.header-layout');
+    /*функция показа модального окна*/
+    function showPopup(icon, popup) {
+        $(document).on('click', icon, function (e) {
+
+            e.preventDefault();
+            $(popup).addClass('is-visible');
+            $('.mfp-bg').addClass('is-visible');
+
+
+            $html.addClass('blocked');
+            // $('body').addClass('blocked');
+
+            var widthScroll = windowWidth - documentWidth;
+            console.log('widthScroll: ' + widthScroll);
+            if(windowWidth > documentWidth){
+                $html.css({
+                    'margin-right': widthScroll
+                });
+                $header.css({
+                    'padding-right': widthScroll
+                });
+                $('.mfp-wrap').css({
+                    'overflow-y':'scroll'
+                });
+                // console.log('Есть полоса прокрутки');
+            }else {
+                // console.log('Нет полосы прокрутки');
+            }
+        });
+    }
+
+    $(document).on('click', '.js-popup-close', function (e) {
+        e.preventDefault();
+        $(this).parents('.mfp-wrap').removeClass('is-visible');
+        $('.mfp-bg').removeClass('is-visible');
+        $html.css({
+            'margin-right':'0'
+        }).removeClass('blocked');
+
+        $header.css({
+            'padding-right': '0'
+        });
+
+        var parentModal = $(this).parents('.mfp-wrap');
+        if(parentModal.data('save')){
+            onPopupClose(parentModal);
+        }
+    });
+
+    showPopup(".header-auth", '.popup-auth');
+
+
 
     //footer script
 });
