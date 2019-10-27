@@ -330,12 +330,12 @@
             font-size: 13px;
             color: #1e1c27;
             display: block;
-            padding: 10px 15px 10px 24px;
+            padding: 10px 15px 10px 34px;
             position: relative;
 
             .icon-phone {
                 position: absolute;
-                left: 0;
+                left: 10px;
                 top: 8px;
             }
 
@@ -587,6 +587,29 @@
                     }
                 }
             }
+        }
+    }
+
+    &-course {
+        white-space: nowrap;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 14px;
+        border-right: 1px solid #e3e3e3;
+        padding: 0 15px 0 8px;
+        font-weight: 300;
+
+        &__title {
+            margin-right: 6px;
+        }
+
+        &__data {
+            padding: 3px 8px;
+            color: #f06314;
+            border: 1px solid #f06314;
+            border-radius: 4px;
         }
     }
 }
@@ -1920,6 +1943,34 @@
                 }
             }
         }
+
+        &-mobile {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: stretch;
+
+            .filter-mobile {
+
+                &:nth-child(1) {
+                    padding-right: 10px;
+                    width: 100%;
+                }
+
+                &:nth-child(2) {
+                    width: 60px;
+                    flex: 1 0 72px;
+                }
+            }
+
+            .catalog-sorting-view {
+                background-color: #eff0f2;
+                border: 1px solid #e5e5e5;
+                border-radius: 6px;
+                text-decoration: none;
+                padding: 13px 14px 12px;
+            }
+        }
     }
 
     /*catalog-list*/
@@ -2017,6 +2068,7 @@
         border: 1px solid #e5e5e5;
         border-radius: 10px;
         position: relative;
+        height: 100%;
 
         &__label {
             position: absolute;
@@ -2113,6 +2165,7 @@
         &__sale {
             height: 21px;
             color: #a6a6a6;
+            font-size: 14px;
 
             span {
                 //text-decoration: line-through;
@@ -2122,13 +2175,30 @@
 
         &__price {
             color: #a6a6a6;
-            font-weight: 700;
-            margin-bottom: 10px;
+            font-size: 14px;
+
 
             span {
                 font-size: 18px;
                 color: #f06314;
+                font-weight: 700;
             }
+
+            &.rub {
+                font-size: 14px;
+                font-weight: 400;
+
+
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #293439;
+                }
+            }
+        }
+
+        &__line {
+            margin-top: 10px;
         }
 
         &__discount {
@@ -2442,6 +2512,11 @@
     }
 
     &-table {
+
+        &__title {
+            font-weight: 700;
+        }
+
         &__line {
             padding: 8px 16px;
             font-size: 14px;
@@ -2458,11 +2533,30 @@
 
         &__key {
             width: 50%;
+            a {
+                color: #188cca;
+                text-decoration: none;
+
+                &:hover {
+                    color: #ef6314;
+                }
+            }
         }
 
         &__value {
             width: 50%;
         }
+
+        &__price {
+            width: 80px;
+            text-align: center;
+
+            .c-btn {
+                padding: 4px 16px;
+                font-size: 12px;
+            }
+        }
+
     }
 }
 
@@ -2983,8 +3077,9 @@
 
         &-old {
             color: #a6a6a6;
+            font-size: 14px;
             span {
-                font-size: 14px;
+
                 color: #293439;
             }
 
@@ -2992,16 +3087,26 @@
 
         &-sale {
             color: #a6a6a6;
+            font-size: 14px;
             span {
-                font-size: 14px;
+
                 color: #f06314;
                 font-weight: 700;
             }
 
-            margin-bottom: 13px;
+            &.rub {
+                font-size: 13px;
+                span {
+
+                    color: #293439;
+                    font-weight: 400;
+                }
+            }
         }
 
         &-discount {
+
+            margin-top: 13px;
             font-size: 13px;
             color: #293439;
             text-align: center;
