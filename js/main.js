@@ -127,9 +127,15 @@ $(function () {
         ]
     });
 
+    function removeShow(){
+        $('div', 'a', 'span').removeClass('active');
+        $('div', 'a', 'span').removeClass('is-show');
+    }
+
     $(document).on('click', '.header-basket__link', function (e) {
         e.preventDefault();
         removeActivePoint();
+        removeShow();
         $(this).toggleClass('active');
         $('.popup-basket').toggleClass('is-show');
 
@@ -197,18 +203,20 @@ $(function () {
         // var div2 = $('.popup-mini');
 
 
-        function hideOutZone(elem) {
+        function hideOutZone(elem, btn) {
             var div = $(elem);
             if (!div.is(e.target) && div.has(e.target).length === 0) {
 
-                $('.header-basket__link').removeClass('active');
-                $('.popup-basket').removeClass('is-show');
+                $(btn).removeClass('active');//уубираем активность у кнопки
+                $(elem).removeClass('is-show'); //скрываем модалку
             }
         }
 
         if (e.which === 1) {
-            hideOutZone('.popup-basket');
-
+            hideOutZone('.popup-basket', '.header-basket__link');
+            // hideOutZone('.header-auth-popup', '.header-auth__link');
+            // hideOutZone('.menu-mobile', '.header-catalog-icon');
+            // hideOutZone('.catalog-menu', '.header-catalog');
         }
     });
 
@@ -469,6 +477,7 @@ $(function () {
     $(document).on('click', '.header-search-mobile', function (e) {
         e.preventDefault();
         removeActivePoint();
+        removeShow();
         $('.header-search').toggleClass('is-show');
         $(this).toggleClass('active');
     });
@@ -650,6 +659,7 @@ $(function () {
 
     $(document).on('click', '.header-auth__link', function (e) {
         e.preventDefault();
+        removeShow();
         $('.header-auth-popup').toggleClass('is-show');
         $(this).toggleClass('active');
     });
