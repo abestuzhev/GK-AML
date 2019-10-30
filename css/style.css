@@ -1448,13 +1448,13 @@ input.c-input--success::placeholder {
         position: absolute;
         z-index: 10;
         top: 0;
-        left: -15px;
+        left: -17px;
         bottom: 0;
         width: 30px;
         background-color: #f06314;
-        -webkit-transform: skewX(200deg);
-            -ms-transform: skewX(200deg);
-                transform: skewX(200deg); }
+        -webkit-transform: skewX(199deg);
+            -ms-transform: skewX(199deg);
+                transform: skewX(199deg); }
     .header-catalog.js-desktop-hover:hover .catalog-menu {
       opacity: 1;
       visibility: visible;
@@ -1506,11 +1506,23 @@ input.c-input--success::placeholder {
             -ms-flex: 1 0 180px;
                 flex: 1 0 180px; }
         .header-catalog .catalog-menu-category__item {
-          max-width: 115px; }
+          max-width: 115px;
+          position: relative; }
+          .header-catalog .catalog-menu-category__item svg {
+            display: none; }
           .header-catalog .catalog-menu-category__item.active .catalog-menu-category__title {
             background-color: #f06314;
             border-radius: 4px;
             color: #ffffff; }
+          .header-catalog .catalog-menu-category__item.active svg {
+            display: block;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            right: 10px;
+            fill: #fff; }
         .header-catalog .catalog-menu-category__title {
           display: block;
           font-size: 16px;
@@ -1729,12 +1741,12 @@ input.c-input--success::placeholder {
       position: absolute;
       z-index: 2;
       top: 0;
-      left: -15px;
+      left: -17px;
       bottom: 0;
       width: 30px;
-      -webkit-transform: skewX(200deg);
-          -ms-transform: skewX(200deg);
-              transform: skewX(200deg);
+      -webkit-transform: skewX(199deg);
+          -ms-transform: skewX(199deg);
+              transform: skewX(199deg);
       background-color: #fff; }
     .header-search::after {
       content: '';
@@ -1744,9 +1756,9 @@ input.c-input--success::placeholder {
       right: -8px;
       bottom: 0;
       width: 30px;
-      -webkit-transform: skewX(200deg);
-          -ms-transform: skewX(200deg);
-              transform: skewX(200deg);
+      -webkit-transform: skewX(199deg);
+          -ms-transform: skewX(199deg);
+              transform: skewX(199deg);
       background-color: #fff; }
     .header-search-input {
       display: block;
@@ -4493,6 +4505,10 @@ input.c-input--success::placeholder {
 
 #profile-card-2 .profile-field {
   max-width: 50%; }
+
+@media (max-width: 1919px) and (min-width: 1880px) {
+  .slider-item {
+    height: 533px; } }
 
 @media (max-width: 1430px) {
   .header-search::after {

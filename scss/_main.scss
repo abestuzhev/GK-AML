@@ -151,11 +151,11 @@
                 position: absolute;
                 z-index: 10;
                 top: 0;
-                left: -15px;
+                left: -17px;
                 bottom: 0;
                 width: 30px;
                 background-color: #f06314;
-                transform: skewX(200deg);
+                transform: skewX(199deg);
             }
 
         }
@@ -201,11 +201,31 @@
 
                 &__item {
                     max-width: 115px;
-                    &.active .catalog-menu-category__title {
-                        background-color: #f06314;
-                        border-radius: 4px;
-                        color: #ffffff;
+                    position: relative;
+
+                    svg {
+                        display: none;
                     }
+
+
+                    &.active {
+                        .catalog-menu-category__title {
+                            background-color: #f06314;
+                            border-radius: 4px;
+                            color: #ffffff;
+                        }
+
+                        svg {
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 10px;
+                            fill: #fff;
+                        }
+                    }
+
+
                 }
 
                 &__title {
@@ -541,10 +561,10 @@
             position: absolute;
             z-index: 2;
             top: 0;
-            left: -15px;
+            left: -17px;
             bottom: 0;
             width: 30px;
-            transform: skewX(200deg);
+            transform: skewX(199deg);
             background-color: #fff;
         }
         &::after {
@@ -555,7 +575,7 @@
             right: -8px;
             bottom: 0;
             width: 30px;
-            transform: skewX(200deg);
+            transform: skewX(199deg);
             background-color: #fff;
         }
 
@@ -932,6 +952,7 @@
 
     &-item {
         height: 530px;
+        //height: 27.7vw;
         -webkit-background-size: cover;
         background-size: cover;
         background-position: 50% 50%;
