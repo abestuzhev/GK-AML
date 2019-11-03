@@ -2090,6 +2090,10 @@
         border-radius: 10px;
         position: relative;
         height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
 
         &__label {
             position: absolute;
@@ -2108,7 +2112,9 @@
             min-width: 180px;
             max-width: 100%;
             height: 200px;
+            min-height: 200px;
             margin-bottom: 10px;
+            overflow: hidden;
 
             img {
                 //width: 100%;
@@ -2134,6 +2140,7 @@
 
         &__body {
             margin-bottom: 2px;
+            height: 100%;
         }
 
         &__title {

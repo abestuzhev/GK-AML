@@ -12,6 +12,37 @@ $(window).on("load", function () {
 });
 
 $(function () {
+
+    //ресайз картинок
+    function fix_size($img, $parent) {
+        var images = $($img);
+        images.each(setsize);
+
+        function setsize() {
+            var img = $(this),
+                img_dom = img.get(0),
+                container = img.parents($parent);
+            if (img_dom.complete) {
+                resize();
+            } else img.one('load', resize);
+
+            function resize() {
+                if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
+                    img.width('100%');
+                    img.height('auto');
+                    return;
+                }
+                img.height('100%');
+                img.width('auto');
+            }
+        }
+    }
+    $(window).on('resize', fix_size('.catalog-card__img img', '.catalog-card__img'));
+    fix_size('.catalog-card__img img', '.catalog-card__img');
+
+
+
+
     $('.slider').slick({
         dots: true,
         infinite: true,
@@ -287,6 +318,8 @@ $(function () {
         $('.catalog-list').attr('data-display', $view);
         var $viewCatalog = $('.catalog-list').data('display');
         console.log('$viewCatalog: ' + $viewCatalog);
+
+        fix_size('.catalog-card__img img', '.catalog-card__img');
     });
 
 

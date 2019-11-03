@@ -1086,3 +1086,91 @@ input.c-input--success::placeholder { color: #329954; }
 .c-currency-symbol.rub {
     font-family: pt_sans_rub;
 }
+
+
+//c-breadcrumbs
+
+.c-breadcrumbs {
+    padding: 10px 22px;
+    background-color: #eff0f2;
+    margin-top: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &-list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &__item {
+            margin-right: 9px;
+
+            &.active {
+                .c-breadcrumbs-link {
+                    background-color: #f17134;
+                    color: #ffffff;
+                    border-color: #f17134;
+                }
+            }
+
+        }
+    }
+
+    &-link {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        color: #293439;
+        font-size: 13px;
+        line-height: 30px;
+        text-align: center;
+        text-decoration: none;
+
+
+    }
+
+    &-text {
+        color: #30353d;
+        font-size: 13px;
+        line-height: 1;
+    }
+}
+
+@media (max-width:600px){
+    .c-breadcrumbs-text {
+        display: none;
+    }
+
+    .c-breadcrumbs {
+        padding: 10px 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
