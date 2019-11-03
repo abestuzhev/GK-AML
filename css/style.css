@@ -832,6 +832,26 @@ input.c-input--success::placeholder {
 .c-tabs .tab-content:first-child {
   display: block; }
 
+.c-btn-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .c-btn-layout .c-btn {
+    margin-right: 15px;
+    width: 50%; }
+    .c-btn-layout .c-btn:last-child {
+      margin-right: 0; }
+
 .c-btn {
   display: inline-block;
   padding: 11px 34px;
@@ -1276,6 +1296,22 @@ input.c-input--success::placeholder {
 
 .popup-reg .popup {
   max-width: 760px; }
+
+.popup-add-product .popup {
+  max-width: 540px; }
+
+.popup-add-product__title {
+  font-size: 18px;
+  color: #293439;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 8px; }
+
+.popup-add-product__text {
+  text-align: center;
+  font-size: 13px;
+  color: #293439;
+  margin-bottom: 20px; }
 
 .c-currency-symbol.rub {
   font-family: pt_sans_rub; }
