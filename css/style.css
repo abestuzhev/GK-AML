@@ -4117,6 +4117,10 @@ input.c-input--success::placeholder {
     color: #30353d;
     text-decoration: none; }
 
+.basket-address .c-select,
+.basket-address .SumoSelect {
+  width: 100%; }
+
 .basket-delivery-pay__num {
   font-size: 20px;
   color: #f06314;
