@@ -5581,7 +5581,12 @@ input.c-input--success::placeholder {
   .slider-mobile-card__img {
     height: 150px; }
   .slider-mobile .slick-prev, .slider-mobile .slick-next {
-    top: 74px; } }
+    top: 74px; }
+  .basket-address-card {
+    display: block; }
+  .basket-address-card__input {
+    width: 100%;
+    margin: 0 0 10px 0; } }
 
 @media (max-width: 460px) {
   .catalog-list[data-display="list"] .catalog-card__footer {

@@ -1493,6 +1493,15 @@
         top: 74px;
     }
 
+    .basket-address-card {
+        display: block;
+    }
+
+    .basket-address-card__input {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
 }
 
 @media (max-width: 460px) {
