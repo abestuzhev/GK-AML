@@ -3678,6 +3678,7 @@
         }
         &-product {
             font-weight: 700;
+            margin-bottom: 14px;
 
             span {
                 color: #aaaaaa;
@@ -3692,6 +3693,8 @@
             }
         }
         &-quantity {
+            min-height: 30px;
+            margin-bottom: 10px;
             span {
                 color: #aaaaaa;
             }

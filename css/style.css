@@ -4504,7 +4504,8 @@ input.c-input--success::placeholder {
     display: block;
     color: #188cca; }
   .profile-history-product {
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 14px; }
     .profile-history-product span {
       color: #aaaaaa; }
     .profile-history-product__code {
@@ -4513,8 +4514,11 @@ input.c-input--success::placeholder {
       padding-left: 14px;
       color: #aaaaaa;
       font-weight: 400; }
-  .profile-history-quantity span {
-    color: #aaaaaa; }
+  .profile-history-quantity {
+    min-height: 30px;
+    margin-bottom: 10px; }
+    .profile-history-quantity span {
+      color: #aaaaaa; }
   .profile-history-kp {
     padding-left: 34px;
     text-align: left;
