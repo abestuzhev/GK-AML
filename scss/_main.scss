@@ -3825,3 +3825,40 @@
 #profile-card-2 .profile-field {
     max-width: 50%;
 }
+
+
+/*search correct */
+
+.search-card-year {
+    font-size: 12px;
+}
+
+.search-card-code {
+    margin-bottom: 0;
+}
+
+.search-list-head__item {
+    color: #000;
+}
+
+.basket-operation-total,
+.basket-operation-line__col {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.basket-operation-total__name,
+.basket-operation-line__text {
+    width: 76%;
+}
+
+.basket-list-col {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.basket-price-discount {
+    text-align: left;
+}
