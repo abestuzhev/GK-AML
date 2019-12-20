@@ -3710,6 +3710,9 @@ input.c-input--success::placeholder {
   font-size: 30px;
   line-height: 1;
   margin-bottom: 6px; }
+  .category-title a {
+    color: #293439;
+    text-decoration: none; }
 
 .category-subtitle {
   font-size: 14px;
