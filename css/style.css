@@ -2759,7 +2759,8 @@ input.c-input--success::placeholder {
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    text-decoration: none; }
     .slider-category-card__body {
       -webkit-box-flex: 0;
           -ms-flex: 0 1 100%;
@@ -2767,7 +2768,8 @@ input.c-input--success::placeholder {
     .slider-category-card__title {
       color: #293439;
       font-size: 12px;
-      line-height: 1.3; }
+      line-height: 1.3;
+      text-decoration: none; }
 
 .filter {
   width: 270px;
