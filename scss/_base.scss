@@ -848,6 +848,21 @@ input.c-input--success::placeholder { color: #329954; }
         }
     }
 
+    &-text {
+        font-size: 16px;
+        color: #293439;
+        line-height: 1.3;
+        margin-bottom: 30px;
+        span {
+            display: block;
+        }
+
+        &--center {
+            text-align: center;
+        }
+        
+    }
+
     &-link {
         color: #188cca;
         font-size: 13px;
