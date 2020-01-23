@@ -1099,6 +1099,20 @@ input.c-input--success::placeholder { color: #329954; }
     max-width: 760px;
 }
 
+.popup-success  {
+
+    .popup {
+        max-width: 650px;
+
+        &-title {
+            opacity: 0 !important;
+        }
+    }
+
+    
+    
+}
+
 .popup-add-product {
     .popup {
         max-width: 540px;

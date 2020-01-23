@@ -1297,6 +1297,12 @@ input.c-input--success::placeholder {
 .popup-reg .popup {
   max-width: 760px; }
 
+.popup-success .popup {
+  max-width: 650px; }
+
+.popup-success .popup-title {
+  opacity: 0 !important; }
+
 .popup-add-product .popup {
   max-width: 540px; }
 
