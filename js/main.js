@@ -39,6 +39,9 @@ $(function () {
     }
     $(window).on('resize', fix_size('.catalog-card__img img', '.catalog-card__img'));
     fix_size('.catalog-card__img img', '.catalog-card__img');
+    
+    $(window).on('resize', fix_size('.category-card__img img', '.category-card__img'));
+    fix_size('.category-card__img img', '.category-card__img');
 
 
 
