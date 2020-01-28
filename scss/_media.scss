@@ -1164,6 +1164,12 @@
         display: block;
         padding: 8px 10px;
     }
+
+    .product-card-table--3 .product-card-table__price {
+        justify-content: flex-start;
+    }
+
+
     .product-card-table--3 .product-card-table__key {
         width: 100%;
     }
@@ -1549,5 +1555,11 @@
 
     .header-logo .icon-logo {
         font-size: 158px;
+    }
+
+    
+    .product-card-table--3 .product-card-table__price .search-card-quantity,
+    .product-card-table--3 .product-card-table__price .search-card-btn {
+        margin-top: 0;
     }
 }

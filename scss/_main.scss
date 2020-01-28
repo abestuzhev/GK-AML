@@ -2557,7 +2557,11 @@
             display: flex;
             flex-flow: row nowrap;
             justify-content: flex-start;
-            align-items: flex-start;
+            align-items: center;
+
+            &:first-child .product-card-table__price {
+                justify-content: center;
+            }
 
             &:nth-child(odd) {
                 background-color: #f1f1f1;
@@ -2581,12 +2585,33 @@
         }
 
         &__price {
-            width: 80px;
+            width: 130px;
             text-align: center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            align-items: center;
+
+            .search-card-btn,
+            .search-card-quantity {
+                width: auto;
+            }
+            .search-card-quantity {
+                margin-right: 10px;
+            }
+
+            .c-counter__field {
+                padding: 8px 12px;
+            }
+
+            .catalog-card__btn {
+                padding: 5px 11px;
+            }
 
             .c-btn {
-                padding: 4px 16px;
+                padding: 6px 16px;
                 font-size: 12px;
+                width: 100%;
             }
         }
 
@@ -2771,7 +2796,7 @@
         }
 
         &__img {
-            height: 100px;
+            height: 130px;
             margin-bottom: 10px;
             overflow: hidden;
             position: relative;

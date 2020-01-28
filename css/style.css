@@ -3578,9 +3578,13 @@ input.c-input--success::placeholder {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .product-card-table__line:first-child .product-card-table__price {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .product-card-table__line:nth-child(odd) {
     background-color: #f1f1f1; }
 
@@ -3596,11 +3600,34 @@ input.c-input--success::placeholder {
   width: 50%; }
 
 .product-card-table__price {
-  width: 80px;
-  text-align: center; }
+  width: 130px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .product-card-table__price .search-card-btn,
+  .product-card-table__price .search-card-quantity {
+    width: auto; }
+  .product-card-table__price .search-card-quantity {
+    margin-right: 10px; }
+  .product-card-table__price .c-counter__field {
+    padding: 8px 12px; }
+  .product-card-table__price .catalog-card__btn {
+    padding: 5px 11px; }
   .product-card-table__price .c-btn {
-    padding: 4px 16px;
-    font-size: 12px; }
+    padding: 6px 16px;
+    font-size: 12px;
+    width: 100%; }
 
 .product-slider {
   display: -webkit-box;
@@ -3778,7 +3805,7 @@ input.c-input--success::placeholder {
       -o-transition: all .1s ease-in-out;
       transition: all .1s ease-in-out; }
   .category-card__img {
-    height: 100px;
+    height: 130px;
     margin-bottom: 10px;
     overflow: hidden;
     position: relative; }
@@ -5415,6 +5442,10 @@ input.c-input--success::placeholder {
   .product-card-table--3 .product-card-table__line {
     display: block;
     padding: 8px 10px; }
+  .product-card-table--3 .product-card-table__price {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .product-card-table--3 .product-card-table__key {
     width: 100%; }
   .product-card-table--3 .product-card-table__value {
@@ -5663,4 +5694,7 @@ input.c-input--success::placeholder {
     width: 43%;
     text-align: left; }
   .header-logo .icon-logo {
-    font-size: 158px; } }
+    font-size: 158px; }
+  .product-card-table--3 .product-card-table__price .search-card-quantity,
+  .product-card-table--3 .product-card-table__price .search-card-btn {
+    margin-top: 0; } }
