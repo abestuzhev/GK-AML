@@ -2585,7 +2585,7 @@
         }
 
         &__price {
-            width: 130px;
+            width: 246px;
             text-align: center;
             display: flex;
             flex-flow: row nowrap;
@@ -2598,6 +2598,11 @@
             }
             .search-card-quantity {
                 margin-right: 10px;
+            }
+
+            .search-card-layout {
+                margin-right: 10px;
+
             }
 
             .c-counter__field {

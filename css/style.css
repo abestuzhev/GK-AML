@@ -3600,7 +3600,7 @@ input.c-input--success::placeholder {
   width: 50%; }
 
 .product-card-table__price {
-  width: 130px;
+  width: 246px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3619,6 +3619,8 @@ input.c-input--success::placeholder {
   .product-card-table__price .search-card-quantity {
     width: auto; }
   .product-card-table__price .search-card-quantity {
+    margin-right: 10px; }
+  .product-card-table__price .search-card-layout {
     margin-right: 10px; }
   .product-card-table__price .c-counter__field {
     padding: 8px 12px; }
