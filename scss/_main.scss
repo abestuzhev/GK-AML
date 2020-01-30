@@ -2544,7 +2544,41 @@
         }
     }
 
+    table {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        table-layout: fixed ;
+        border: 2px solid #f1f1f1;
+
+        tbody {
+            min-width: 100%;
+        }
+
+        tr {
+            min-width: 100%;
+            &:nth-child(odd) {
+                background-color: #f1f1f1;
+                min-height: 40px;
+
+            }
+        }
+        td {
+            padding: 12px 10px;
+        }
+
+        p {
+            
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
     &-table {
+        margin-bottom: 40px;
 
         &__title {
             font-weight: 700;
@@ -2558,6 +2592,7 @@
             flex-flow: row nowrap;
             justify-content: flex-start;
             align-items: center;
+            min-height: 40px;
 
             &:first-child .product-card-table__price {
                 justify-content: center;
@@ -2781,7 +2816,7 @@
     }
 
     &-card {
-        padding: 30px 30px 60px;
+        padding: 10px 30px 60px;
         border: 1px solid #e5e5e5;
         color: #293439;
         background-color: #fff;
@@ -2801,7 +2836,7 @@
         }
 
         &__img {
-            height: 130px;
+            height: 150px;
             margin-bottom: 10px;
             overflow: hidden;
             position: relative;
