@@ -3387,6 +3387,47 @@
         &__item {
             margin-bottom: 9px;
         }
+
+        &.product-card-table {
+
+            .search-card {
+                font-size: 14px;
+                border: none;
+            }
+
+            .search-list-head__item {
+                font-size: 14px;
+            }
+
+            .search-list-head {
+                background-color: #f1f1f1;
+            }
+
+            .search-list-head__item {
+                padding: 5px 9px;
+            }
+            
+            .search-card-btn a {
+                background-color: #fff;
+            }
+
+            .search-list__item {
+                margin-bottom: 0;
+
+                &:nth-child(even) {
+                    background-color: #f1f1f1;
+                }
+            }
+
+            .search-card-pn {
+                text-align: left;
+            }
+
+            a {
+                color: #188cca;
+                text-decoration: none;
+            }
+        }
     }
 
     &-card {

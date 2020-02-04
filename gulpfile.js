@@ -58,3 +58,8 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', ['html', 'css', 'sass', 'js', 'browser-sync', 'watch']);
+// gulp.task('default', gulp.series('html', 'css', 'sass', 'js', 'browser-sync', 'watch'));
+// exports.default = gulp.series(
+//     gulp.parallel(html, css, sass, js, browser-sync),
+//     watch
+// );
