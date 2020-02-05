@@ -4358,8 +4358,10 @@ input.c-input--success::placeholder {
     .search-card-quantity .c-counter {
       display: inline-block; }
   .search-card-btn {
-    width: 4%; }
+    width: 6%; }
     .search-card-btn a {
+      width: 100%;
+      text-align: center;
       display: inline-block; }
 
 .profile {
@@ -4841,7 +4843,7 @@ input.c-input--success::placeholder {
   .search-card-quantity {
     width: 10%; }
   .search-card-btn {
-    width: 6%; }
+    width: 10%; }
   .search-list.product-card-table .search-card-btn {
     width: 10%; }
   .search-card {
@@ -5263,7 +5265,7 @@ input.c-input--success::placeholder {
     display: none; }
   .search-card-pn {
     text-align: left;
-    width: 20%;
+    width: 15%;
     margin-bottom: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5291,7 +5293,7 @@ input.c-input--success::placeholder {
   .search-card-quantity {
     width: 14%; }
   .search-card-btn {
-    width: 10%; }
+    width: 12%; }
   .search-list.product-card-table .search-card-btn {
     width: 12%; }
   .search-list.product-card-table .search-list__item {
@@ -5528,13 +5530,13 @@ input.c-input--success::placeholder {
   .search-card-sale {
     width: 24%; }
   .search-card-price {
-    width: 24%; }
+    width: 33%; }
   .search-card-discount {
     width: 14%; }
   .search-card-quantity {
     width: 20%; }
   .search-card-btn {
-    width: 16%;
+    width: 28%;
     text-align: right; }
   .search-list.product-card-table .search-card {
     font-size: 13px; }
@@ -5773,11 +5775,12 @@ input.c-input--success::placeholder {
   .header-catalog__link {
     padding: 13px 7px; }
   .search-card-quantity {
-    width: 77%;
+    width: 66%;
     text-align: right;
-    margin-top: 10px; }
+    margin-top: 10px;
+    padding-right: 10px; }
   .search-card-btn {
-    width: 60px;
+    width: 80px;
     margin-top: 10px; }
   .search-card-pn {
     width: 42%; }

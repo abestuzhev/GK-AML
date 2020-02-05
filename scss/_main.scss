@@ -3518,10 +3518,12 @@
                 display: inline-block;
             }
         }
-        &-btn {
-            width: 4%;
+        &-btn {            
+            width: 6%;
 
             a {
+                width: 100%;
+                text-align: center;
                 display: inline-block;
             }
         }
