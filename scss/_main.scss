@@ -3407,15 +3407,26 @@
                 padding: 5px 9px;
             }
             
-            .search-card-btn a {
-                background-color: #fff;
-            }
-
             .search-list__item {
                 margin-bottom: 0;
 
                 &:nth-child(even) {
                     background-color: #f1f1f1;
+                }
+            }
+
+            .search-card-btn {
+                width: 6%;
+
+                a {
+                    padding: 6px 6px;
+                    background-color: #fff;
+                    width: 100%;
+                    text-align: center;
+
+                    &:hover {
+                        color: #f06314;
+                    }
                 }
             }
 

@@ -152,6 +152,10 @@
         width: 6%;
     }
 
+    .search-list.product-card-table .search-card-btn {
+        width: 10%;
+    }
+
     .search-card {
         font-size: 13px;
     }
@@ -851,6 +855,10 @@
         width: 10%;
     }
 
+    .search-list.product-card-table .search-card-btn {
+        width: 12%;
+    }
+
     .search-list.product-card-table .search-list__item {
         margin-bottom: 9px;
     }
@@ -1216,7 +1224,6 @@
 
     .search-card-discount {
         width: 14%;
-
     }
 
     .search-card-quantity {
@@ -1245,6 +1252,23 @@
 
     .catalog-list[data-display="tile"] .catalog-list__item {
         width: 100%;
+    }
+
+    .search-list.product-card-table .search-card-discount {
+        // width: 80%;
+    }
+
+    .search-list.product-card-table .search-card-quantity {
+        width: auto;
+    }
+
+    .search-list.product-card-table .search-card-btn {
+        width: 28%;
+        margin-left: 14px;
+    }
+
+    .search-list.product-card-table .search-card-btn--more {
+        margin: 0;
     }
 
     .product-card-reference {
