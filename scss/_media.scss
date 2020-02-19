@@ -1307,6 +1307,23 @@
         border: 1px solid #e5e5e5;
     }
 
+    .popup-close {
+        position: absolute;
+        right: 17px;
+        top: 10px;
+    }
+
+     
+    .popup-add-product .c-btn-layout {
+        flex-flow: column;
+    }
+
+    .popup-add-product .c-btn {
+        width: 100%;
+        margin: 0 0 14px 0;
+    }
+
+
 }
 
 
@@ -1576,6 +1593,8 @@
     .search-list.product-card-table .search-card-discount {
         margin-bottom: 0;
     }
+
+    
 
 }
 

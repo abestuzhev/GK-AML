@@ -1317,7 +1317,7 @@ input.c-input--success::placeholder {
 .popup-add-product__title {
   font-size: 18px;
   color: #293439;
-  line-height: 1;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 8px; }
 
@@ -5576,7 +5576,19 @@ input.c-input--success::placeholder {
     display: block; }
   .profile-input {
     width: 100%;
-    border: 1px solid #e5e5e5; } }
+    border: 1px solid #e5e5e5; }
+  .popup-close {
+    position: absolute;
+    right: 17px;
+    top: 10px; }
+  .popup-add-product .c-btn-layout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+  .popup-add-product .c-btn {
+    width: 100%;
+    margin: 0 0 14px 0; } }
 
 @media (max-width: 550px) {
   .slider-category-card {
