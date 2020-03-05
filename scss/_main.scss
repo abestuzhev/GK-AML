@@ -3991,3 +3991,115 @@
 .basket-price-discount {
     text-align: left;
 }
+
+
+
+
+/*delivery*/
+
+.delivery {
+    margin-top: 47px;
+    &-title {
+        font-size: 30px;
+        line-height: 1;
+        color: #293439;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+
+    &-list {
+        &__item {
+            margin-bottom: 40px;
+        }
+    }
+
+    &-card {
+        padding-left: 90px;
+        position: relative;
+        min-height: 40px;
+
+        &-icon {
+            position: absolute;
+            top: -12px;
+            left: 0;
+            width: 72px;
+            height: 72px;
+            background-color: #fafafa;
+            border-radius: 100px;
+
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+
+        &-man {
+
+        }
+
+        &-body {
+            p, b {
+                font-size: 15px;
+                line-height: 1;
+                color: #293439;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+
+            b {
+                font-weight: 700;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+
+            ul {
+                font-size: 15px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #f06314;
+                font-size: 15px;
+            }
+        }
+
+        &__title {
+            color: #293439;
+            font-size: 17px;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        &__accent {
+            color: #f06314;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

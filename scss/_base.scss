@@ -579,6 +579,15 @@ input.c-input--success::placeholder { color: #329954; }
     font-family: 'Roboto', sans-serif;
 }
 
+.c-ul {
+
+    li {
+        margin-bottom: 8px;
+        list-style: disc;
+        list-style-position: inside;
+    }
+}
+
 .c-form {
     &-line {
         margin-bottom: 12px;

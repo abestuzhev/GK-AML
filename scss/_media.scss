@@ -1201,6 +1201,28 @@
         width: 100%;
         margin-bottom: 6px;
     }
+
+    .delivery-card-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .delivery-card {
+        padding-left: 70px;
+    }
+
+    .delivery-title {
+        font-size: 24px;
+    }
+
+
+    .delivery {
+        margin-top: 30px;
+    }
+
+    .delivery-list__item {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 580px) {
